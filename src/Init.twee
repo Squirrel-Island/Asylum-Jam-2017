@@ -1,6 +1,7 @@
 :: StoryInit
 
 /* Initialize variables */
+<<set $phone_img to 'img/phone.png'>>
 
 <<set $triedToHidePill to null>> /* tried to hide the Advil under your sheets instead of taking it */
 
