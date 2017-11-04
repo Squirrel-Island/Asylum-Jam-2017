@@ -1,3 +1,7 @@
 :: Start
-<<audio "bgm_waltz" play>>\
-Hello world! (so original)
+!!! Chapter Select
+[[Chapter One]]
+[[Chapter Two]]
+[[Chapter Three]]
+[[Chapter Four]]
+[[Epilogue]]
