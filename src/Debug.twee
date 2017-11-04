@@ -5,3 +5,12 @@
         _i: <<link "Play">><<audio _i play>><</link>>\
     <</capture>>\
 <</for>>
+
+<div id="dingo" style="border: 1px solid red; min-height: 100px;"></div>
+
+<<link "Buddy #1">>
+    <<replace "#dingo">><<include "Chapter One">><</replace>>
+<</link>>
+<<link "Buddy #2">>
+    <<replace "#dingo">><<include "Epilogue">><</replace>>
+<</link>>
