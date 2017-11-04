@@ -1,3 +1,105 @@
 :: Chapter One
 
-Chapter one start.
+Someone's shaking me.
+
+Ugh. I don't wanna go to school. I was having a good dream, but now I can't remember what it was. Stupid dreams. I think Luisa was in it, though. We were in a big room. Where? 
+
+Stop //shaking// me, jeez. I already forgot my dream.
+
+I feel all gross and sweaty, so I kick off my covers. Doesn't really help.
+
+"C'mon, honey"--oh, it's Mom--"let me feel your forehead."
+
+Her hand feels nice and cool on my head. I still can't remember what I was dreaming about, but I feel like I lost something nice. 
+
+"Go away," I mumble. It comes out sounding like a dog growling... close enough.
+
+"You're burning up!" Mom says. "I'll get the thermometer. [[Sit up.]]"
+
+:: Sit up.
+
+My arms feel like jello, but I push myself up against the backboard of my bed, barely opening my eyes. Mom comes back with a thermometer and stuffs it under my tongue. I pretty much fall asleep again while waiting and remember what the big room was. For a second, I'm in it again. The gym at school, where the seventh graders get to have dances. 
+
+Mom pulls the thermometer out of my mouth and me out of that nice dream. Great. Now I'm never gonna get back to it.
+
+"A hundred three!" she yells in my ear. She murmurs something under her breath about maybe being able to stay home from work and hurries out of the room. I doze, but try not to fall asleep again. She'll just wake me up anyway. A few minutes later, she's back with a big glass of water and some little red tablets. Advil. "Take these." She stuffs them into my hand along with the water. "And drink that whole glass of water to flush out the germs."
+
+"Do I have to?"
+
+"Of course you have to! You're burning up!"
+
+I put one pill on my tongue, but don't swallow it. I hate taking pills; they make me gag. It starts dissolving, tasting all bitter and gross, so I swig it down with water. It actually goes down okay. Maybe Mom won't notice I didn't take both. I could [[try to take it][$triedToHidePill to false]], but maybe I could [[stash it under my sheets][$triedToHidePill to true]].
+
+:: _stub: gag on pill
+
+I gag on it and spit water all over my pajamas and bedsheets. Nevermind, I hate pills.
+
+"You're okay, honey. Here, try again." She hands picks the damp pill off my sheets and hands it back to me. Great. Now it's gonna taste bitter. I try again, and this time it does go down... mostly. It still feels like something is caught in my throat, so I chug down the rest of the water.
+
+"See?" she says. "That wasn't so bad."
+
+I try to slouch back into bed and go back to sleep, but she tosses a new pajama shirt at me. "Put that on. You don't want to sleep in damp clothes. You'll get sicker!"
+
+I don't think I could get much sicker. She sits down on the edge of my bed.
+
+"Honey," she says as I change my shirt. "Mommy's got to go to work. My boss won't give me the time off. I want to stay with you, but..."
+
+[["It's okay, Mom."]] / [["Your boss is a dick."]]
+
+:: try to take it
+
+I put the other pill on my tongue, but don't wait for it to dissolve this time. The first one went well, so I kinda feel good about this one. 
+
+<<include "_stub: gag on pill">>
+
+:: stash it under my sheets
+
+"Will!" Mom says. "Do you think I was born yesterday? Don't try to hide your medicine!"
+
+"But I'm gonna gag."
+
+"It'll make you feel better, honey."
+
+I frown and put the second pill in my mouth. Maybe it won't be so bad.
+
+<<include "_stub: gag on pill">>
+
+:: _stub: mom leaves
+
+"I know." I don't know what to do when she gets sad like this, so I just give her a hug. It makes her smile, but she doesn't look happy.
+
+"Your dad is stuck in the office all week, too. It's a release week. He's already there."
+
+"It's okay."
+
+"It's six A.M.," she says, standing. "You can take more Advil in four hours and then again four hours after that. That's ten A.M. and two P.M., okay? I left both doses on the kitchen table, and I don't want to see them still sitting there when I get back. Understood, young man?"
+
+"Maybe."
+
+"No maybes! You're gonna take them or..."--she smiles--"or the tickle monster's gonna getcha!" She lunges at my bed and tickles under my arms where I'm super ticklish. I start squirming and laughing and telling her to stop, but when she does, I don't really want her to go. "Make sure you take it," she says, still smiling as she walks out the door. "And drink plenty of fluids!"
+
+The front door opens and closes downstairs, and by the time the car pulls out of the driveway, I'm dozing again. I try to get back to that nice dream, picturing the big gym and me dancing with Luisa--that's what I was doing, dancing, leaning in, and then...--but when I fall asleep, [[there are no more dreams]].
+
+:: "It's okay, Mom."
+
+"It's okay, Mom."
+
+"No, it's not." When she thinks I can't hear, she sometimes tells Dad her boss is a dick, but... "We need the money."
+
+<<include "_stub: mom leaves">>
+
+:: "Your boss is a dick."
+
+"Your boss is a dick."
+
+"William!" Mom exclaims, wide-eyed. "Where did you learn that //language//?"
+
+"That's what you say to Dad when you think I'm not listening."
+
+She puts her hands on her hips. "Is that so? Well, that's a grown-up word. Next time you say it, you'll be getting some soap to wash out your mouth!" She smiles. "But yes, as you say, Mommy's boss is a dick... but we need the money."
+
+<<include "_stub: mom leaves">>
+
+:: there are no more dreams
+
+I wake up... /* TODO: finish this */

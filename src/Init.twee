@@ -2,6 +2,8 @@
 
 /* Initialize variables */
 
+<<set $triedToHidePill to null>> /* tried to hide the Advil under your sheets instead of taking it */
+
 /* Initialize audio */
 
 <<cacheaudio "bgm_waltz"           "bgm/end-card-waltz-5-master.ogg">>
