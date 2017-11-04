@@ -1,0 +1,7 @@
+:: Debug
+!!! Audio
+<<for _i range ["rotary-ring", "rotary-ring-2", "rotary-ring-distant"]>>
+    <<capture _i>>\
+        _i: <<link "Play">><<audio _i play>><</link>>\
+    <</capture>>\
+<</for>>
