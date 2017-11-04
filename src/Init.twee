@@ -4,6 +4,10 @@
 
 /* Initialize audio */
 
+<<cacheaudio "bgm_waltz" "bgm/end-card-waltz-5-master.ogg">>
+
+<<waitforaudio>>
+
 /* Initialize config */
 
 <<set Config.history.controls to false>>
