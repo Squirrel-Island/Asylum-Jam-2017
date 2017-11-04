@@ -1,1 +1,31 @@
 :: Will's Desk
+
+My desk is a clutter of [[drawing paper]], pencils, crayons, and pens. A bunch of my [[drawings]] are pinned to the wall behind it. [[My laptop]] is pushed off to one side.
+
+[[Go back.|Will's Bedroom]]
+
+:: drawings
+
+My wall is covered with drawings and comics I drew. Some are just sketches, but I've been working on coloring them recently too. The shadows on Naruto's face came out looking funny; my drawing of Gumball came out better. My newest comic is pinned right in the middle. It's about an android superhero named Daxus who fights off supernatural monsters in the back alleys of downtown Red Hill. My house made an appearance in it, but I didn't make it //too// obvious. 
+
+Dad says Daxus looks like this old toy line called Bionicles. I looked them up and asked him to get me some for my birthday. They look really cool.
+
+[[Go back.|Will's Desk]]
+
+:: drawing paper
+
+A stack of drawing paper is sitting on my desk, completely blank. I haven't figured out what I want to draw next, but I think it will be another story about Daxus, who's an android superhero. Sometimes, when I don't know where to start, it helps to just [[start drawing]].
+
+[[Go back.|Will's Desk]]
+
+:: start drawing
+
+<<if $willTemp gte 100>>I pick up a pencil, but my hands are sweaty and I can't focus at all. My head hurts too much to think about drawing right now. I should probably [[go take some Advil]] first.<<else>><<set $comicProgression to 1>>I grab a pencil and draw for a while. By the time my hand starts to get sore, I have a pretty good sketch of Daxus. His face is part robot-helmet and part human, and the human part looks concerned. I draw a phone into the picture with a speech bubble coming out of it. What should I put in there? It'll have to be something scary, I think. But I'm getting tired now. I wish I wasn't sick.<</if>>
+
+[[Go back.|Will's Desk]]
+
+:: My laptop
+
+My laptop is open to a YouTube tutorial on drawing manga. I think I fell asleep while watching it last night; I don't remember much.
+
+[[Go back.|Will's Desk]]

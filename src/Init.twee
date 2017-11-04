@@ -4,6 +4,10 @@
 <<set $phone_img to 'img/phone.png'>>
 
 <<set $triedToHidePill to null>> /* tried to hide the Advil under your sheets instead of taking it */
+<<set $willTemp to 103>> /* Will's current fever temperature */
+<<set $fedSam to [false, false, false, false]>> /* feeding Sam on different days */
+<<set $willBedroomBlindOpen to false>> /* blind in Will's bedroom open? */
+<<set $comicProgression to 0>> /* how far Will is in his new comic */
 
 /* Initialize audio */
 
@@ -14,6 +18,10 @@
                                    "sfx/rotary-ring-2.ogg">>
 <<cacheaudio "rotary-ring-distant" "sfx/rotary-ring-distant.m4a"
                                    "sfx/rotary-ring-distant.ogg">>
+<<cacheaudio "rotary-pickup"       "sfx/rotary-pickup.m4a"
+                                   "sfx/rotary-pickup.ogg">>
+<<cacheaudio "rotary-hangup"       "sfx/rotary-hangup.m4a"
+                                   "sfx/rotary-hangup.ogg">>
 
 <<waitforaudio>>
 

@@ -102,4 +102,53 @@ She puts her hands on her hips. "Is that so? Well, that's a grown-up word. Next 
 
 :: there are no more dreams
 
-I wake up... /* TODO: finish this */
+I wake up not feeling rested at all. Sun is coming in through the blinds, and the whole room is too bright. I pull my pillow over my face and try to fall asleep again, but it's too warm in the room. Even so, I'm shivering--freezing--and sweating.
+
+The digital clock on my desk says 10:53. The Advil must've worn off.
+
+I should [[get out of bed|Will's Bedroom]].
+
+:: go take some Advil
+
+I leave my room and head downstairs to the kitchen. There is a piece of paper on the table on top of which are two sets of red pills. On the paper above the first set is "10:00" and above the second set "2:00". The time on the stove says 10:58... woops. This time, I take both pills without a problem, but I still feel groggy and awful, like I'm moving with weights tied to me. It sucks that medicine doesn't work faster.
+
+How long does it take them to kick in? I look at the clock. 10:59 becomes [[11:00]].
+
+:: 11:00
+
+<<audio "rotary-ring-distant" loop play>>\
+\
+Somewhere, a phone starts ringing. It must be the neighbor's phone because it sounds old. Our landline doesn't sound like that, and my cell definitely doesn't sound like that. 
+
+No, wait. Dad //does// have an old phone in his office, but no one ever calls it. I wonder who would be calling that phone? Dad doesn't like me going in his office when he's not there, but I should probably [[tell whoever it is to call his cell]].
+
+:: tell whoever it is to call his cell
+
+Dad's office is across the house, next to the front door. Sometimes he keeps the door locked, but most of the time he forgets. Today it opens easily, and I <<linkappend "go inside.">><<audio "rotary-ring-distant" stop>><<audio "rotary-ring" loop play>>
+
+Jeez, these old phones are really loud. It's kinda freaky. There's no caller ID or anything like on my cell, just this big circle thing that you dial with. How did people ever used to know who was calling? It could be anyone on the other end...
+
+I look out the front window, but no one's there. I'm dumb. I kinda expected someone to be watching me from the sidewalk with a phone to their ear.
+
+Oh, right. I should [[answer the phone]].
+<</linkappend>>
+
+:: answer the phone
+
+<<audio "rotary-ring" stop>><<audio "rotary-pickup" play>>\
+\
+I pick up the phone. "Hello?"
+
+"Hello, this is Red Hill Landscaping & Lawn Care calling to inform you that your gardener is under the weather and will be unable to make it today. We apologize for any inconvenience."
+
+"Oh, uh, I think you want my dad. I can give you his--"
+
+"No, I believe we've reached the right person. We'll be in touch. [[Thank you for your patience.]]"
+
+:: Thank you for your patience.
+
+<<audio "rotary-hangup" play>>\
+That was weird... I didn't even know we had a gardener. I look out the front window again, but no one's out there except the old lady that lives next door walking her dog. I should get out of here. If that phone rings again, it's gonna startle me.
+
+At least the Advil's kicking in. Maybe I'll draw a comic panel or two. Guess I'll head [[back to my bedroom|Will's Bedroom]].\
+<<set $willTemp to 99>>\

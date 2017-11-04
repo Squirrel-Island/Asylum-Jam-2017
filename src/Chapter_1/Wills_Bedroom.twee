@@ -1,0 +1,41 @@
+:: Will's Bedroom
+
+<<if visited() is 1>>I drag myself out of bed and take a tissue from the box of tissues on my desk to blow my nose. It comes up green, and I still feel stuffy. A harsh cough racks my chest, and I spit up more green into the tissue before tossing it into my overflowing wastebasket.
+
+<</if>>My bedroom is a mess. There are piles of clothes on the floor. Most of them are dirty, but there is a pile for clean clothes stuffed at the foot of my bed. There's a desk against the wall, perpendicular--I learned that word in math class last week--to the top of my bed. Dad put it in here for me to do homework at, but I mostly use it to draw comics. It's cluttered with a bunch of [[my stuff|Will's Desk]]. My dresser is on the other side of the room. Mom keeps telling me to put my clean clothes in it. There's a [[fish tank]] on top with my goldfish, Sam, swimming inside. If I open the blinds, I can see the backyard from [[my window]].
+
+<<if $willTemp gte 100>>My shirt feels damp with sweat, and I can't really think right. I'd better [[go take some Advil]].\
+<<else>>I feel a bit better now that the Advil's kicked in. I can probably [[get back to sleep]] if I want.\
+<</if>>
+
+:: fish tank
+
+I walk over to Sam's tank. "Hi, Sam." I almost tap on the glass, then remember Dad told me it was bad for the fish, so I wave instead.
+
+He swims in a circle in response. Looks like he's feeling better than me. Lucky fish.<<if $willTemp gte 100>>
+
+Fishy luck? Lucky fishy, fishy lucky, fishy fish lucky lucky fish. I start giggling to myself, but I'm not sure why that's funny. Probably the fever. I should [[go take some Advil]].<</if>>
+
+Next to his tank is a container of [[fish food]].
+
+[[Go back.|Will's Bedroom]]
+
+:: fish food
+
+<<if not $fedSam[0]>><<set $fedSam[0] to true>>"Hungry, Sam?"
+
+I pop the top off the fish food container and sprinkle some into the tank. Sam swims to the top and starts eating the flakes. His mouth makes a funny bloop-bloop motion.\
+<<else>>I already fed Sam today.<</if>>
+
+[[Go back.|Will's Bedroom]]
+
+:: my window
+
+<<if not $willBedroomBlindOpen>>The blinds are closed, but they're not doing much good to keep the light out. I might as well <<linkappend "open them.">>
+<<set $willBedroomBlindOpen to true>>
+I open the windows. Now I can see [[the backyard|my window]].<</linkappend>>\
+<<else>>I can see my backyard out the window. It's not very big, and the swingset is pretty beat-up. Still fun to play on, though. Joey and I sometimes pretend we're superheroes and see who can fly the highest by jumping off the swing. I wonder if Luisa would play superhero with me?
+
+Probably not.<</if>>
+
+[[Go back.|Will's Bedroom]]
