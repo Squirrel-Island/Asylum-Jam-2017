@@ -1,5 +1,15 @@
 :: Chapter Four
-Chapter four start. [[phone]]
+Chapter four start.
+[[phone]]
+[[create messages]]
+
+:: create messages
+<<newText "Billy" "Hey boi!" true>>
+<<newText "Billy" "Lel" false>>
+[[list messages]]
+
+:: list messages
+<<listMessages "Billy">>
 
 :: phone
 <div style="background-image: url(img/phone.png); background-repeat: no-repeat; height: 700px; width: 712px;">
