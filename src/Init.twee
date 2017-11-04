@@ -1,0 +1,11 @@
+:: StoryInit
+
+/* Initialize variables */
+
+/* Initialize audio */
+
+/* Initialize config */
+
+<<set Config.history.controls to false>>
+<<set Config.saves.autoload to false>>
+<<set Config.saves.autosave to false>>
