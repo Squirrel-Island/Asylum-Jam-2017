@@ -1,0 +1,28 @@
+:: widgets
+<<widget "newText">>
+    <<set _message to { content: $args[1], incoming: $args[2] }>>
+
+    <<if $conversations.hasOwnProperty($args[0]) == false>>
+        <<set $conversations[$args[0]] to {}>>
+    <</if>>
+
+    <<if $conversations[$args[0]].hasOwnProperty('messages')>>
+        <<set $conversations[$args[0]]['messages'].push(_message)>>
+    <<else>>
+        <<set $conversations[$args[0]]['messages'] to [_message]>>
+    <</if>>
+
+    <<set $conversations[$args[0]]['updatedAt'] = new Date()>>
+<</widget>>
+
+<<widget "listMessages">>
+    <<set _thread to $conversations[$args[0]]>>
+
+    Thread last updated:
+    <<print _thread['updatedAt']>>
+
+    <<for $i to 0; $i < _thread['messages'].length; $i++>>
+        Incoming: <<print _thread['messages'][$i]['incoming']>>
+        Content: <<print _thread['messages'][$i]['content']>>
+    <</for>>
+<</widget>>

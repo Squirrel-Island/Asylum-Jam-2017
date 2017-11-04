@@ -2,8 +2,11 @@
 
 /* Initialize variables */
 <<set $phone_img to 'img/phone.png'>>
-
+<<set $conversations to {}>>
 <<set $triedToHidePill to null>> /* tried to hide the Advil under your sheets instead of taking it */
+
+/* Initialize widgets */
+<<include "widgets">>
 
 /* Initialize audio */
 
