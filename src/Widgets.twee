@@ -26,29 +26,32 @@
 
     Unread status: <<print _thread['unread']>>
 
-    <<for _i to 0; _i < _thread['messages'].length; _i++>>
-        <<set _message to _thread['messages'][_i]>>
-        <<capture _message>>
-            <<if _message['incoming'] == false>>
-                <p style="text-align: right;"><<print _message['content']>></p>
-            <<else>>
-                <p>_name: <<print _message['content']>></p>
-            <</if>>
-        <</capture>>
-    <</for>>
+    <<nobr>>
+        <<for _i to 0; _i < _thread['messages'].length; _i++>>
+            <<set _message to _thread['messages'][_i]>>
+
+            <<capture _message>>
+                <<if _message['incoming'] == false>>
+                    <p class="message" style="text-align: right;"><<print _message['content']>></p>
+                <<else>>
+                    <p class="message" >_name: <<print _message['content']>></p>
+                <</if>>
+            <</capture>>
+        <</for>>
+    <</nobr>>
 
     <<button "All threads">>
             <<replace "#phoneScreen">><<threads>><</replace>>
     <</button>>
 <</widget>>
 
-<<widget "threads">>
+<<widget "threads">><<nobr>>
+    <h1>Messages</h1>
     <<if Object.keys($threads).length == 0>>
         You have no messages.
     <<else>>
         <<set _keys to Object.keys($threads)>>
         <<set _links to {} >>
-
         <<for _i to 0; _i < _keys.length; _i++>>
             <<set _key to _keys[_i]>>
 
@@ -67,11 +70,13 @@
                     <<link _key>>
                         <<replace "#phoneScreen">><<thread _key>><</replace>>
                     <</link>>
+                    <br>
                     <<print _thread['messages'][_indexOfLastMessage]['content']>>
+                    <br><br>
                 <</if>>
             <</capture>>
         <</for>>
     <</if>>
-
+    <</nobr>>
     <<button "Debug | Chapter Four" "Chapter Four">><</button>>
 <</widget>>

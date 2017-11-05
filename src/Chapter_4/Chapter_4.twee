@@ -13,9 +13,11 @@ Chapter four start.
 [[phone]]
 
 :: phone
-<div id="phoneScreen" style="border: 1px solid blue; min-height: 450px; max-width: 250px;">
-    <<threads>>
-</div>
+<<nobr>>
+    <div id="phoneScreen" style="border: 1px solid blue; min-height: 450px; max-width: 250px;">
+        <<threads>>
+    </div>
+<</nobr>>
 
 :: image phone
 <div style="background-image: url(img/phone.png); background-repeat: no-repeat; height: 700px; width: 712px;">
