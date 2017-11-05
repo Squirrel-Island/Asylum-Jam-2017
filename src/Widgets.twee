@@ -16,39 +16,32 @@
     <<set $threads[$args[0]]['unread'] = true>>
 <</widget>>
 
-<<widget "thread">>
+<<widget "thread">><<nobr>>
     <<set _thread to $threads[$args[0]]>>
     <<set _thread['unread'] to false>>
     <<set _name to $args[0]>>
-
-    Thread last updated:
-    <<print _thread['updatedAt']>>
-
-    Unread status: <<print _thread['unread']>>
-
+    <p><<button "All threads">><<replace "#phoneScreen">><<threads>><</replace>><</button>></p>
+    <p style="text-align: center;">Conversation with _name</p>
     <<for _i to 0; _i < _thread['messages'].length; _i++>>
         <<set _message to _thread['messages'][_i]>>
         <<capture _message>>
-            <<if _message['incoming'] == false>>
-                <p style="text-align: right;"><<print _message['content']>></p>
+            <<if _message['incoming'] == true>>
+                <p class="speech-bubble-incoming">_name: <<print _message['content']>></p>
             <<else>>
-                <p>_name: <<print _message['content']>></p>
+                <p class="speech-bubble-outgoing"><<print _message['content']>></p>
             <</if>>
         <</capture>>
     <</for>>
-
-    <<button "All threads">>
-            <<replace "#phoneScreen">><<threads>><</replace>>
-    <</button>>
+    <</nobr>>
 <</widget>>
 
-<<widget "threads">>
+<<widget "threads">><<nobr>>
+    <h1>Messages</h1>
     <<if Object.keys($threads).length == 0>>
         You have no messages.
     <<else>>
         <<set _keys to Object.keys($threads)>>
         <<set _links to {} >>
-
         <<for _i to 0; _i < _keys.length; _i++>>
             <<set _key to _keys[_i]>>
 
@@ -61,17 +54,20 @@
                         <<link _key>>
                             <<replace "#phoneScreen">><<thread _key>><</replace>>
                         <</link>>
+                        <br>
                         <<print _thread['messages'][_indexOfLastMessage]['content']>>
+                        <br><br>
                     </strong>
                 <<else>>
                     <<link _key>>
                         <<replace "#phoneScreen">><<thread _key>><</replace>>
                     <</link>>
+                    <br>
                     <<print _thread['messages'][_indexOfLastMessage]['content']>>
+                    <br><br>
                 <</if>>
             <</capture>>
         <</for>>
     <</if>>
-
-    <<button "Debug | Chapter Four" "Chapter Four">><</button>>
+    <</nobr>>
 <</widget>>

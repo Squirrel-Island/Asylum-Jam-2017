@@ -11,11 +11,15 @@ Chapter four start.
     <<newText "Sam" "that's what I thought." true>>
 <</button>>
 [[phone]]
+[[image phone]]
 
 :: phone
-<div id="phoneScreen" style="border: 1px solid blue; min-height: 450px; max-width: 250px;">
-    <<threads>>
-</div>
+<<nobr>>
+    <div id="phoneScreen" style="border: 1px solid blue; height: 450px;  max-width: 250px; overflow: auto;">
+        <<threads>>
+    </div>
+<</nobr>>
+<<button "Debug | Chapter Four" "Chapter Four">><</button>>
 
 :: image phone
 <div style="background-image: url(img/phone.png); background-repeat: no-repeat; height: 700px; width: 712px;">
