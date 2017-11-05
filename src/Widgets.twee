@@ -18,10 +18,11 @@
     <<set $phoneUnread = true>>
     <<replace "#phone-notif">><<include "Phone Notification">><</replace>>
 
-    <<audio "phone-notif" play>>
-    <<shaketarget "#phone-notif" 700ms>>
-    <<timed 2s>>
-        <<shaketarget "#phone-notif" 700ms>>
+    <<audio "phone-notif" stop>><<audio "phone-notif" play>>
+    <<shaketarget "#phone-notif" stop>>
+    <<shaketarget "#phone-notif" 150ms>>
+    <<timed 0.5s>>
+        <<shaketarget "#phone-notif" 150ms>>
     <</timed>>
 <</widget>>
 
