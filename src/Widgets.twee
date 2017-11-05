@@ -16,6 +16,12 @@
     <<set $threads[$args[0]]['unread'] = true>>
     <<set $phoneUnread = true>>
     <<replace "#phone-notif">><<include "Phone Notification">><</replace>>
+
+    <<audio "phone-notif" play>>
+    <<shaketarget "#phone-notif" 700ms>>
+    <<timed 2s>>
+        <<shaketarget "#phone-notif" 700ms>>
+    <</timed>>
 <</widget>>
 
 <<widget "thread">><<nobr>>

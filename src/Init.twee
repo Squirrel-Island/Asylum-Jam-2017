@@ -6,6 +6,7 @@
 
 <<set $chapter to 0>> /* current chapter number */
 
+<<set $threads to {} >>
 <<set $phoneUnread to false>>
 
 <<set $progress to 0>> /* current chapter progress */
@@ -32,6 +33,8 @@
                                    "sfx/rotary-pickup.ogg">>
 <<cacheaudio "rotary-hangup"       "sfx/rotary-hangup.m4a"
                                    "sfx/rotary-hangup.ogg">>
+<<cacheaudio "phone-notif"         "sfx/phone-notif.m4a"
+                                   "sfx/phone-notif.ogg">>
 
 <<waitforaudio>>
 
