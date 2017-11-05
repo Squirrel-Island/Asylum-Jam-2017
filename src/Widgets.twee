@@ -1,13 +1,14 @@
 :: widgets
 
 /*
-newText name (string) content (string) incoming (boolean)
+newText name (string) content (string) incoming (boolean) notify (boolean)
 name is the name/company of the person Will is speaking with.
 content is the content of the message.
 incoming is a boolean that represents whether the message is incoming or outgoing message.
+notify is a boolean that represents whether the message will trigger shake and notif tone.
 */
 <<widget "newText">>
-    <<set _message to { content: $args[1], incoming: $args[2] }>>
+    <<set _message to { 'content': $args[1], 'incoming': $args[2], 'notify': $args[3] }>>
 
     <<if $threads.hasOwnProperty($args[0]) == false>>
         <<set $threads[$args[0]] to {}>>
@@ -24,12 +25,14 @@ incoming is a boolean that represents whether the message is incoming or outgoin
     <<set $phoneUnread = true>>
     <<replace "#phone-notif">><<include "Phone Notification">><</replace>>
 
-    <<audio "phone-notif" stop>><<audio "phone-notif" play>>
-    <<shaketarget "#phone-notif" stop>>
-    <<shaketarget "#phone-notif" 150ms>>
-    <<timed 0.5s>>
+    <<if _message['notify'] == true>>
+        <<audio "phone-notif" stop>><<audio "phone-notif" play>>
+        <<shaketarget "#phone-notif" stop>>
         <<shaketarget "#phone-notif" 150ms>>
-    <</timed>>
+        <<timed 0.5s>>
+            <<shaketarget "#phone-notif" 150ms>>
+        <</timed>>
+    <</if>>
 <</widget>>
 
 <<widget "thread">><<nobr>>
