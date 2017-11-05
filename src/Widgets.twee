@@ -18,6 +18,8 @@
 
 <<widget "thread">>
     <<set _thread to $threads[$args[0]]>>
+    <<set _thread['unread'] to false>>
+    <<set _name to $args[0]>>
 
     Thread last updated:
     <<print _thread['updatedAt']>>
@@ -25,11 +27,15 @@
     Unread status: <<print _thread['unread']>>
 
     <<for _i to 0; _i < _thread['messages'].length; _i++>>
-        Incoming: <<print _thread['messages'][_i]['incoming']>>
-        Content: <<print _thread['messages'][_i]['content']>>
+        <<set _message to _thread['messages'][_i]>>
+        <<capture _message>>
+            <<if _message['incoming'] == false>>
+                <p style="text-align: right;"><<print _message['content']>></p>
+            <<else>>
+                <p>_name: <<print _message['content']>></p>
+            <</if>>
+        <</capture>>
     <</for>>
-
-    <<set _thread['unread'] = false>>
 
     <<button "All threads">>
             <<replace "#phoneScreen">><<threads>><</replace>>
