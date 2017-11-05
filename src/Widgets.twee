@@ -1,4 +1,5 @@
 :: widgets
+
 <<widget "newText">>
     <<set _message to { content: $args[1], incoming: $args[2] }>>
 
