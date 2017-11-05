@@ -1,0 +1,7 @@
+.passage h2 { 
+    text-decoration: underline;
+}
+
+.passage h3, .passage h4 {
+    margin: 0;
+}

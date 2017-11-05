@@ -1,3 +1,100 @@
 :: look up that gardening company
 
-I open my laptop and type "red hill landscaping & lawn care" into the search bar. /* TODO: finish this */
+<<if visited() is 1>>I open my laptop and type "red hill landscaping & lawn care" into the search bar. A couple results pop up.<<else>>There are a couple results for "red hill landscaping & lawn care."<</if>>
+* [["Red Hill Landscaping & Lawn Care | Home"]]
+* [["Looking for a new landscaping service??? | RH Home Owners Forum"]]
+* [["trying out Red Hill landscaping, anyone used them? | RH Home Owners Forum"]]
+<<if $readPosts.reduce(function(a,b) { return a && b; })>>[[Go back.|Read posts]]<</if>>
+
+:: Red Hill Landscaping & Lawn Care | Home
+
+<<set $readPosts[0] to true>>\
+This is the Red Hill Landscaping & Lawn Care main site, it looks like. There is a big picture showing off a nice-looking lawn and their logo and a bunch of other text talking about how great their service is. An email address and phone number are on the top of the page, over the picture. There are a lot of smiling gardeners and happy families on this home page.
+
+Nothing looks weird here.
+
+[[Back|look up that gardening company]]
+
+:: Looking for a new landscaping service??? | RH Home Owners Forum
+
+<<set $readPosts[1] to true>>\
+!! RH Home Owners Forum
+!!! Looking for a new landscaping service???
+!!!! Posted by lhriley63 [7 years ago]
+Can someone rec me a good landscaping service?? We've used Red Hill Landscaping for the last 10 years and we've never had any1 better!!! Sux that they're closing, does any1 have a good alt landscaper in RH??
+
+!!! RE: Looking for a new landscaping service???
+!!!! Posted by jdonelly [7 years ago]
+We used them for a long time as well, but our favorite gardener moved to a different local company. We went with him! They're called Green Fields Landscaping. Highly recommend them!
+
+!!! RE: Looking for a new landscaping service???
+!!!! Posted by batman2000 [7 years ago]
+WHAT!? They're closing!? Ahhhh, I need a new service nowww too!!!!
+
+!!! RE: Looking for a new landscaping service???
+!!!! Posted by jdonelly [7 years ago]
+batman2000 - Green Fields Landscaping
+
+!!! RE: Looking for a new landscaping service???
+!!!! Posted by lhriley63 [7 years ago]
+Thank you!!, thank you!, thank you!!! Thought I was gonna have to mow the lawn myself!!
+
+!!! RE: Looking for a new landscaping service???
+!!!! Posted by randy [3 months ago]
+Not to necropost, but these guys are back. A friend of mine is trying them out now.
+
+[[Back|look up that gardening company]]
+
+:: trying out Red Hill landscaping, anyone used them? | RH Home Owners Forum
+
+<<set $readPosts[2] to true>>\
+!! RH Home Owners Forum
+!!! trying out Red Hill landscaping, anyone used them?
+!!!! Posted by tom_w [4 months ago]
+hey guys. anyone here used red hill landscaping? got a call from them the other day asking if i'd like to use their service. kinda presumptuous, but i'm in the market for a gardener. i think i'll give them a shot.
+
+!!! RE: trying out Red Hill landscaping, anyone used them?
+!!!! Posted by lhriley63 [4 months ago]
+My hubby and I used to use them, they were great!!!! We're using Green Fields now!, but you can't go wrong w/ RH Landscaping!!! So cool that they're back!!
+
+!!! RE: trying out Red Hill landscaping, anyone used them?
+!!!! Posted by sadie_rose18 [4 months ago]
+I used them back in the day. Thought they were a bit overpriced, but they did a decent job.
+
+!!! RE: trying out Red Hill landscaping, anyone used them?
+!!!! Posted by zachdaniels [4 months ago]
+I got a call from them too! Let me know how it turns out if you try them.
+
+!!! RE: trying out Red Hill landscaping, anyone used them?
+!!!! Posted by tom_w [4 months ago]
+ok. i just called them up. i'll keep you guys posted.
+
+!!! RE: trying out Red Hill landscaping, anyone used them?
+!!!! Posted by tom_w [3 months ago]
+they're coming today. we'll see if they show up on time and if they do a good job.
+
+!!! RE: trying out Red Hill landscaping, anyone used them?
+!!!! Posted by zachdaniels [2 month ago]
+Any word, Tom? They keep calling me. Definitely a little aggressive with their marketing.
+
+!!! RE: trying out Red Hill landscaping, anyone used them?
+!!!! Posted by bob [a day ago]
+this thread died lol
+
+[[Back|look up that gardening company]]
+
+:: Read posts
+
+It looks like they're a normal gardening service. Still, if we never signed up for them, how do they know my name? And where I live?
+
+...
+
+I wonder what happened to that Tom guy. He seemed really active about updating his post. Did something happen to him?
+
+He probably just forgot, I guess.
+
+Yeah. He just forgot.
+
+I hope they don't call back.
+
+I think I've [[had enough internet for now|Will's Bedroom 2]].

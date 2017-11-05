@@ -10,6 +10,7 @@
 <<set $fedSam to [false, false, false, false]>> /* feeding Sam on different days */
 <<set $willBedroomBlindOpen to false>> /* blind in Will's bedroom open? */
 <<set $comicProgression to 0>> /* how far Will is in his new comic */
+<<set $readPosts to [false, false, false]>> /* read posts on RH Landscaping in Ch2 */
 
 /* Initialize widgets */
 <<include "widgets">>

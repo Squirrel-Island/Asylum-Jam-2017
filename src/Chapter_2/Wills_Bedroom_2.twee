@@ -2,13 +2,15 @@
 
 <<if visited() is 1>>I return to my bedroom and close the door. It won't block the sound of that phone if it does ring again, not really, but it makes me feel a little better.
 
-<</if>>There are piles of clothes all over my floor, and my desk's cluttered with a bunch of [[my comics and stuff|Will's Desk 2]]. There's a [[fish tank 2]] on top of my dresser with my goldfish, Sam, swimming inside. If I open the blinds, I can see the backyard from [[my window 2]].
+<</if>><<if previous() is "Read posts">>I close my laptop and get up from my desk.
+
+<</if>>There are piles of clothes all over my floor, and my desk's cluttered with a bunch of [[my comics and stuff|Will's Desk 2]]. There's a [[fish tank|fish tank 2]] on top of my dresser with my goldfish, Sam, swimming inside. If I open the blinds, I can see the backyard from [[my window|my window 2]].
 
 :: fish tank 2
 
 I walk over to Sam's tank. "Hi, Sam."
 
-Next to his tank is a container of [[fish food 2]].
+Next to his tank is a container of [[fish food|fish food 2]].
 
 [[Go back.|Will's Bedroom 2]]
 
@@ -23,9 +25,9 @@ I pop the top off the fish food container and sprinkle some into the tank. Sam s
 
 :: my window 2
 
-<<if not $willBedroomBlindOpen>>The blinds are closed, but I can hear rain outside. I'm still kinda nervous about that phone call; sometimes watching the rain calms me down. I might as well <<linkappend "open the window.">>
+<<if not $willBedroomBlindOpen>>The blinds are closed, but I can hear rain outside. I'm still kinda nervous about that phone call; sometimes watching the rain calms me down. I might as well <<linkappend "open the blinds.">>
 <<set $willBedroomBlindOpen to true>>
-I open the windows. Now I can see [[the backyard|my window 2]] and the rain dripping down the window.<</linkappend>>\
+I open the blinds. Now I can see [[the backyard|my window 2]] and the rain dripping down the window.<</linkappend>>\
 <<else>>The sky is gray, and rain is dripping down my window. The slide attached to the swingset looks like a waterslide now. If I wasn't sick, I'd go out there and try it out. Still, watching the rain is nice.
 
 I'd never tell Joey that, though. He'd call me a sissy.<</if>>
