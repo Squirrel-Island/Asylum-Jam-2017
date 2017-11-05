@@ -56,10 +56,19 @@
                 <<set _thread to $threads[_key]>>
                 <<set _indexOfLastMessage = _thread['messages'].length - 1>>
 
-                <<link _key>>
-                    <<replace "#phoneScreen">><<thread _key>><</replace>>
-                <</link>>
-                <<print _thread['messages'][_indexOfLastMessage]['content']>>
+                <<if _thread['unread'] == true>>
+                    <strong>
+                        <<link _key>>
+                            <<replace "#phoneScreen">><<thread _key>><</replace>>
+                        <</link>>
+                        <<print _thread['messages'][_indexOfLastMessage]['content']>>
+                    </strong>
+                <<else>>
+                    <<link _key>>
+                        <<replace "#phoneScreen">><<thread _key>><</replace>>
+                    <</link>>
+                    <<print _thread['messages'][_indexOfLastMessage]['content']>>
+                <</if>>
             <</capture>>
         <</for>>
     <</if>>
