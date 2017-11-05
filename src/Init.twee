@@ -6,8 +6,8 @@
 
 <<set $chapter to 0>> /* current chapter number */
 
-<<set $phone_img to 'img/phone.png'>>
-<<set $conversations to {}>>
+<<set $phoneUnread to false>>
+
 <<set $progress to 0>> /* current chapter progress */
 <<set $threads to {}>>
 <<set $triedToHidePill to null>> /* tried to hide the Advil under your sheets instead of taking it */

@@ -26,3 +26,12 @@
 ::Shake
 <<shake>>[img[$phone_img]]<</shake>>
 [[Phone]] | <<link "Home" "Start">><</link>>
+
+:: Phone Notification
+<<nobr>><<if $phoneUnread == true>>
+    [img['img/phone_notif_unread.png']]
+<<elseif $phoneInView == true>>
+    [img['img/phone_notif_screen_on.png']]
+<<else>>
+    [img['img/phone_notif_screen_off.png']]
+<</if>><</nobr>>
