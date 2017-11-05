@@ -26,10 +26,11 @@
         <<set _message to _thread['messages'][_i]>>
         <<capture _message>>
             <<if _message['incoming'] == true>>
-                <p class="speech-bubble-incoming">_name: <<print _message['content']>></p>
+                <p><span class="speech-bubble-incoming">_name: <<print _message['content']>></span></p>
             <<else>>
-                <p class="speech-bubble-outgoing"><<print _message['content']>></p>
+                <p><span class="speech-bubble-outgoing"><<print _message['content']>></span></p>
             <</if>>
+            <br>
         <</capture>>
     <</for>>
     <</nobr>>

@@ -11,23 +11,17 @@ Chapter four start.
     <<newText "Sam" "that's what I thought." true>>
 <</button>>
 [[phone]]
-[[image phone]]
 
 :: phone
-<<nobr>>
-    <div id="phoneScreen" style="border: 1px solid blue; height: 450px;  max-width: 250px; overflow: auto;">
-        <<threads>>
-    </div>
-<</nobr>>
-<<button "Debug | Chapter Four" "Chapter Four">><</button>>
-
-:: image phone
 <div style="background-image: url(img/phone.png); background-repeat: no-repeat; height: 700px; width: 712px;">
-    <div style="height: 440px; width: 247px; margin: 84px auto; padding: 15px;">
-        Hello
-    </div>
+    <<nobr>>
+        <div id="phoneScreen">
+            <<threads>>
+        </div>
+    <</nobr>>
 </div>
 [[shake]]
+<<button "Debug | Chapter Four" "Chapter Four">><</button>>
 
 ::shake
 <<shake>>[img[$phone_img]]<</shake>>
