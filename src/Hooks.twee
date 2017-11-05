@@ -1,0 +1,17 @@
+:: PassageReady
+
+<<set _previous to $currentPassage>>
+
+<<if passage() isnot "Phone">>
+    <<set $currentPassage to passage()>>
+<</if>>
+
+<<if previous() isnot "Phone">>
+    <<if ndef $visited[passage()]>>
+        <<set $visited[passage()] to 1>>
+    <<else>>
+        <<set $visited[passage()]++>>
+    <</if>>
+<</if>>
+
+<<set _visited to $visited[passage()]>>

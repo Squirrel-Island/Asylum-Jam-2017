@@ -1,6 +1,9 @@
 :: StoryInit
 
 /* Initialize variables */
+<<set $visited to {}>>
+<<set $currentPassage to "">>
+
 <<set $phone_img to 'img/phone.png'>>
 <<set $conversations to {}>>
 <<set $progress to 0>> /* current chapter progress */
