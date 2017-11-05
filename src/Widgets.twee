@@ -42,11 +42,16 @@
     <<else>>
         <<set _keys to Object.keys($threads)>>
         <<set _links to {} >>
+
+        <<set _keys.sort(function(key1, key2) {
+            return $threads[key2]['updatedAt'] - $threads[key1]['updatedAt'];
+        });>>
+
         <<for _i to 0; _i < _keys.length; _i++>>
             <<set _key to _keys[_i]>>
+            <<set _thread to $threads[_key]>>
 
-            <<capture _key>>
-                <<set _thread to $threads[_key]>>
+            <<capture _key _thread>>
                 <<set _indexOfLastMessage = _thread['messages'].length - 1>>
 
                 <<if _thread['unread'] == true>>
