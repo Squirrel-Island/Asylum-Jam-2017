@@ -7,6 +7,7 @@
         </div>
     <</nobr>>
 </div>
+[[Back|_previous]]
 <<nobr>>
 <<link "Home" "Start">><</link>> |
 <<link "Add Billy content">>
@@ -20,13 +21,8 @@
     <<newText "Sam" "yes, dot com indeeed" false true>>
     <<newText "Sam" "that's what I thought." true true>>
     <<replace "#phoneScreen">><<threads>><</replace>>
-<</link>> |
-[[Shake]]
+<</link>>
 <</nobr>>
-
-::Shake
-<<shake>>[img["img/phone.png"]]<</shake>>
-[[Phone]] | <<link "Home" "Start">><</link>>
 
 :: Phone Notification
 <<nobr>><<if $phoneUnread == true>>
