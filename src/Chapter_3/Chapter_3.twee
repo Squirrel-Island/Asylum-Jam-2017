@@ -3,7 +3,10 @@
 <<set $chapter to 3>>\
 It's almost 11:30, and the phone didn't ring at all today. I guess Dad must've called those gardener people and told them not to call the house anymore. Mom woke me up early to take my temperature, but she didn't give me any Tylenol since I was down at 99.2 and felt okay. I think I might be able to go into school tomorrow. Amazingly, I actually //want// to go back to school. It's lonely (and kinda freaky) being here alone, and I miss Joey's jokes about Marvin Connery's B.O. 
 
-I'd also like to see Luisa. I had that dream again last night, the one about dancing with her in the gym. We were about to kiss (again) when Mom woke me up. Ugh. Well, I finally worked up the nerve to text her and ask her to hang out with me this weekend. She hasn't responded yet. I hope she doesn't think I'm crushing on her... I guess I am, but will she think I'm weird if she knows? I wonder if she likes me too...
+I'd also like to see Luisa. I had that dream again last night, the one about dancing with her in the gym. We were about to kiss (again) when Mom woke me up. Ugh. I'm thinking about texting her and asking if she wants to hang out this weekend. Would that make things weird? I hope not. She might think I'm crushing on her, but I guess I am. I wonder if she likes me too... I dunno if I should <<linkreplace "send her a text">>\
+<<set $textedLuisa to true>>\
+/* TODO: send text */\
+send her a text, but I do. I'm nervous now, but thinking about her makes me happy<</linkreplace>>.
 
 I kept the living room curtains open all morning while I watched T.V. and didn't see any weirdos out there.<<if $calledThePolice>> A police car passed by my house a couple times, though. When the officer saw me looking out the window, he waved.<</if>>
 
@@ -105,4 +108,150 @@ That's an easy one. He'd do his research and take down the baddie... but I'm not
 <</replace>><</timed>>
 
 :: call the police
+<<for _audio range ["door-knock", "door-knock-2", "door-knock-3"]>><<audio _audio stop>><</for>>\
+I dial 911 on my phone<<if $calledThePolice>> again. The police car should be nearby<</if>>. I hope it doesn't take them long to get here. Someone picks up. I struggle to get the words out through my sniffles and panic, but eventually I tell them what's going on.
 
+"The police are on their way," the man says. "Just [[stay on the phone with me]] until they get there."
+
+:: stay on the phone with me
+
+<<audio "breaking-glass" play>>\
+Glass shatters somewhere in the house. It sounds like it came from the kitchen.
+
+"What was that?" the man on the phone asks.
+
+"I think they're in the house. Help me..."
+
+"The police are on their way. Just stay hidden."
+
+Footsteps come down the hall, and I curse at myself. I left the door to the office open. If they see that... "I have to close the door!"
+
+"No! Will, I need you to stay put. Crawl under a desk or hide in a closet, but don't go out."
+
+"He's coming. I gotta go." I hang up the phone.
+
+[[close the door]] / [[try to run out the front door]] / [[hide under Dad's desk]]
+
+:: close the door
+
+I run to slam the door to Dad's office. The footsteps outside speed up, and I fumble with the lock. The door flies open and knocks me back. I stumble, trip over something on the floor, and hit my head against the wall.
+
+It hurts. It hurts really really bad. And the person comes in. I can't see his face. He's wearing all black and a scary mask. Is it even a person? I don't know. My head hurts... I think I'm bleeding. Mom? Dad? Where are you? Dad, weren't you supposed to be home? Dad... help me.
+
+The mask-man lifts his foot--he's wearing boots like a cowboy, a dumb thing to notice--and brings his foot down on my head. [[Everything goes black.|Epilogue]]
+
+:: try to run out the front door
+
+I run out of the office, ignoring the police guy on the phone. The front door is right there, but I fumble with the lock. The footsteps behind me speed up. I throw open the door, but it's too late. Something hard hits me in the back of the head, and I fall down.
+
+It hurts really really bad. Things are getting darker, like it's nighttime, but it's not. I can see the sun. No one's outside today, even though it's a really nice day. Isn't that weird?
+
+Mom... Dad... where are you? Dad, weren't you supposed to be home? Dad... help me.
+
+Something comes down on my head again. [[Everything goes black.|Epilogue]]
+
+:: hide under Dad's desk
+
+I crawl under Dad's big desk and pull the office chair up close to cover me a little. I used to love spinning in this thing.
+
+The footsteps down the hall stop at the open door and come inside. I can see big boots, like cowboy boots, from under the desk. They walk back and forth, looking for me.
+
+<<linkappend "I keep still.">>\
+<<if $textedLuisa>>\
+/* TODO: send text from Luisa */
+ But my phone vibrates in my hand and makes a too loud notification noise. Luisa texted me back. The boots stop in front of the desk, and I try to cower back farther. If I could, I'd burrow into the wall like a mole. The boots turn into knees on the ground, then I'm looking at something... not a face... a mask. A really scary mask.
+
+The person grabs me and yanks me out from under the desk. I hit my head, and it really really hurts. He hits me with something hard. I feel like I'm looking into the night sky, but the stars are all flickering black spots.
+
+Mom? Dad? Where are you? Dad, you were supposed to be home by now, weren't you? Dad... help me.
+
+The mask-man hits me again. [[Everything goes black.|Epilogue]] 
+<<else>>\
+ I even hold my breath. The boots move across the room, then back to the door, then back across the room. They're in front of me, and I really wanna run, but I know he'll catch me. Finally, the boots walk away. I hear them going upstairs.
+
+I think I can [[get out of the house]] now.
+<</if>>\
+<</linkappend>>
+
+:: get out of the house
+
+I run for the door, fumble with the lock for a second, and then sprint out into the front yard. <<if $calledThePolice>><<set $end to 3>>A police officer is pulling up in front of my house with the lights on. I think it's the same guy that waved to me before. He bundles me into the back of his car with his partner, who he tells to watch the front. He goes around the back, but I'm suddenly very sleepy. [[I nod off.|Epilogue]]<<else>><<set $end to 2>>Footsteps run out of the house behind me, and when I look back, the person is wearing a really scary mask. I run harder, but he's catching up. Somewhere nearby, sirens are wailing, but they sound far away still.
+
+Something hard hits me in the back of the head, and it really really hurts. It knocks me over, and I skid across the sidewalk. I start crying. There's a lot of blood, and one of my teeth is on the ground in front of me. My mouth feels full of liquid and I spit out more blood.
+
+Mom? Dad? Where are you? Dad, weren't you supposed to be here? Dad... help me...
+
+The mask man stomps on my leg, and my bone snaps. I scream. He grinds his boot into the broken bone, and I think I'm dying.
+
+The sirens are closer now. Someone yells, and the pressure goes away.
+
+"It's okay," a voice says. "You're gonna be okay." Everything looks dim, but I think I'm looking at a police officer. She smiles at me and tells me again that I'll be okay. I close my eyes and hear her tell someone to tell the ambulance to hurry up. Then [[I fall asleep|Epilogue]].
+
+:: grab a knife from the kitchen
+<<for _audio range ["door-knock", "door-knock-2", "door-knock-3"]>><<audio _audio stop>><</for>>\
+I run out of the office to the kitchen. Mom has a block of knifes near the sink. I'll defend myself, just like Draxus would! 
+
+[[I reach for a knife.]]
+
+:: I reach for a knife.
+
+<<audio "breaking-glass" play>>\
+The kitchen window shatters, and a person in all black climbs in. At first, the person is looking at the floor, so I don't see their face. But then he looks at me, and I get startled and knock over the knife block. Knives tumble over and one of them cuts my palm. I scream. There's so much blood.
+
+The man is wearing a really scary mask, and he walks towards me. I try to crawl backwards, but he's faster. He lifts a foot--he's wearing boots like a cowboy, a really weird thing to notice--and stomps on my head. Everything gets hazy and wobbly. He's picking something up off the ground. Something long and... one of the knives. 
+
+He stabs me in the arm. It hurts! It hurts! Mommy, it hurts! Help me. Daddy? Dad, weren't you supposed to be home? Dad... help me..."
+
+Dad doesn't come. The mask-man plays with me until [[everything goes black|Epilogue]].
+
+:: hide upstairs
+<<for _audio range ["door-knock", "door-knock-2", "door-knock-3"]>><<audio _audio stop>><</for>>\
+I run out of the office for the stairs. <<timed 2s>><<audio "breaking-glass" play>>Glass shatters somewhere downstairs... the kitchen, I think. He's in here with me.
+
+I make it into my room and crawl under my bed. Footsteps are moving around downstairs. I need to [[call the police|call the police - bedroom]].<</timed>>
+
+:: call the police - bedroom
+
+I dial 911 on my phone<<if $calledThePolice>> again. The police car should be nearby<</if>>. I hope it doesn't take them long to get here. Someone picks up. I struggle to get the words out through my sniffles and panic, but eventually I tell them what's going on.
+
+"The police are on their way," the man says. "Just stay hidden, okay?"
+
+The footsteps move around downstairs. "Okay," I say. The man on the phone talks to me for a while, asking me questions I think meant to distract me, but then I hear the footsteps coming up the stairs. "He's coming. I gotta go." I hang up the phone and worm my way as close to the wall beneath my bed as possible. I see a pair of feet enter the room and almost giggle. The person is wearing boots that look like they belong to a cowboy.
+
+Instead, I clap a hand over my mouth and hold it in. He can't hear me. He can't.
+
+<<linkappend "I keep still.">>\
+<<if $textedLuisa>>\
+/* TODO: send text from Luisa */
+ But my phone vibrates in my hand and makes a too loud notification noise. Luisa texted me back. The boots stop in front of my bed, and I try to cower back farther. If I could, I'd burrow into the wall like a mole. The boots turn into knees on the ground, then I'm looking at something... not a face... a mask. A really scary mask.
+
+The person grabs me and yanks me out from under my bed. I hit my head, and it really really hurts. He hits me with something hard. I feel like I'm looking into the night sky, but the stars are all flickering black spots.
+
+Mom? Dad? Where are you? Dad, you were supposed to be home by now, weren't you? Dad... help me.
+
+The mask-man hits me again. [[Everything goes black.|Epilogue]]
+<<else>>\
+ The boots walk across my room, stop in front of my desk, move to my dresser, stop in front of my fish. They move again... and stop in front of my bed. I stop breathing. After what seems like a million years, they step back and leave my room. \
+<<if $calledThePolice>><<set $end to 3>>The person starts tearing through my parents room, but someone bangs on the front door. "Police! Open up!" The footsteps stop. I don't hear them run or anything. They just stop.
+
+It only feels like a second, but the next thing, a police man--the one who waved to me this morning, I think--pulls me out from under the bed and leads me to a police car. As soon as I'm in, I feel super sleepy, and I guess I [[nod off|Epilogue]].
+<<else>>The person tears through the rest of the top floor. Shouldn't the police be here by now? The boots come back into my room and stop in front of my bed. Oh God, he knows...
+
+The boots turn into knees on the ground, then I'm looking at something... not a face... a mask. A really scary mask.
+
+The person grabs me and yanks me out from under my bed. I hit my head, and it really really hurts. He hits me with something hard. I feel like I'm looking into the night sky, but the stars are all flickering black spots. I start to cry.
+
+Mom? Dad? Where are you? Dad, weren't you supposed to be here? Dad... help me...
+
+The mask man stomps on my leg, and my bone snaps. I scream. He grinds his boot into the broken bone, and I think I'm dying.
+
+I'm gonna die.
+
+But someone bangs on the front door. "Police! Open up!"
+
+Everything blinks for a second, and I'm not looking at the mask-man anymore. 
+
+"It's okay," a voice says. "You're gonna be okay." Everything looks dim, but I think I'm looking at a police officer. She smiles at me and tells me again that I'll be okay. I close my eyes and hear her tell someone to tell the ambulance to hurry up. Then [[I fall asleep|Epilogue]].
+<</if>>
+<</if>>
+<</linkappend>>

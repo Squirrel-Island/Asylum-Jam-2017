@@ -17,6 +17,7 @@
 <<set $comicProgression to 0>> /* how far Will is in his new comic */
 <<set $readPosts to [false, false, false]>> /* read posts on RH Landscaping in Ch2 */
 <<set $calledThePolice to false>> /* called the police in Ch 2 */
+<<set $textedLuisa to false>> /* texted Luisa for a date in Ch 3 */
 <<set $callResponse to /* your responses to the call in Ch 3 */
     { ignore: false
     , hangup: false
@@ -48,6 +49,8 @@
                                    "sfx/door-knock-3.ogg">>
 <<cacheaudio "phone-notif"         "sfx/phone-notif.m4a"
                                    "sfx/phone-notif.ogg">>
+<<cacheaudio "breaking-glass"      "sfx/breaking-glass.m4a"
+                                   "sfx/breaking-glass.ogg">>
 
 <<waitforaudio>>
 
