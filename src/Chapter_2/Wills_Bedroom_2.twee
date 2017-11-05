@@ -1,0 +1,57 @@
+:: Will's Bedroom 2
+
+<<if visited() is 1>>I return to my bedroom and close the door. It won't block the sound of that phone if it does ring again, not really, but it makes me feel a little better.
+
+<</if>>There are piles of clothes all over my floor, and my desk's cluttered with a bunch of [[my comics and stuff|Will's Desk 2]]. There's a [[fish tank 2]] on top of my dresser with my goldfish, Sam, swimming inside. If I open the blinds, I can see the backyard from [[my window 2]].
+
+:: fish tank 2
+
+I walk over to Sam's tank. "Hi, Sam."
+
+Next to his tank is a container of [[fish food 2]].
+
+[[Go back.|Will's Bedroom 2]]
+
+:: fish food 2
+
+<<if not $fedSam[1]>><<set $fedSam[1] to true>>"Hungry, Sam?"
+
+I pop the top off the fish food container and sprinkle some into the tank. Sam swims to the top and starts eating the flakes.\
+<<else>>I already fed Sam today.<</if>>
+
+[[Go back.|Will's Bedroom 2]]
+
+:: my window 2
+
+<<if not $willBedroomBlindOpen>>The blinds are closed, but I can hear rain outside. I'm still kinda nervous about that phone call; sometimes watching the rain calms me down. I might as well <<linkappend "open the window.">>
+<<set $willBedroomBlindOpen to true>>
+I open the windows. Now I can see [[the backyard|my window 2]] and the rain dripping down the window.<</linkappend>>\
+<<else>>The sky is gray, and rain is dripping down my window. The slide attached to the swingset looks like a waterslide now. If I wasn't sick, I'd go out there and try it out. Still, watching the rain is nice.
+
+I'd never tell Joey that, though. He'd call me a sissy.<</if>>
+
+[[Go back.|Will's Bedroom 2]]
+
+:: Will's Desk 2
+
+A bunch of [[my drawings|drawings 2]] are pinned to the wall. I can either [[work on my new Daxus comic]] or [[look up that gardening company]] on my laptop. 
+
+[[Go back.|Will's Bedroom 2]]
+
+:: drawings 2
+
+My wall is covered with drawings and comics I drew. Some are just sketches, but I've been working on coloring them recently too. The shadows on Naruto's face came out looking funny; my drawing of Gumball came out better. My newest comic is pinned right in the middle. It's about an android superhero named Daxus who fights off supernatural monsters in the back alleys of downtown Red Hill. My house made an appearance in it, but I didn't make it //too// obvious. 
+
+Dad says Daxus looks like this old toy line called Bionicles. I looked them up and asked him to get me some for my birthday. They look really cool.
+
+[[Go back.|Will's Desk 2]]
+
+:: work on my new Daxus comic
+
+<<set $comicProgression to 2>>\
+I pick up my pencil and start where I left off. I start by filling in the speech bubble coming out of the phone. Turns out, that's not the call Daxus is concerned about. Someone over the line is saying //she// received a strange call that she was sure came from an evil spirit. She needs Daxus's help! I draw another box next to the first one. I sketch for a while (it takes a couple tries to get the angle of Daxus's face right in this one). When I'm done, I draw a thought bubble over his head. It says, "An evil spirit? What sort of evil spirit calls on the phone?" 
+
+I don't know the answer right now either, Daxus. I'll have to think about it.
+
+[[Go back.|Will's Desk 2]]
+

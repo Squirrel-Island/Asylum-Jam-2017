@@ -1,3 +1,56 @@
 :: Chapter Two
 
-Chapter two start.
+<<audio "rotary-ring-distant" loop play>>\
+//Gumball and I are plotting a fake heist in the park. Daxus has been sad recently since there haven't been enough villains, so we need to make him feel important again. But somewhere in the park, an old lady won't pick up her stupid phone, so it keeps ringing and ringing and...//
+
+...ringing. I open my eyes. That old phone is ringing downstairs. The clock on my desk says it's 11:00... probably that weird gardener company again. I get up and blow my nose. A bunch of green gunk comes out, but I still can't breathe very well. My face feels hot and slick.
+
+The phone keeps ringing. Don't they ever quit? I should [[tell them they have the wrong number]] so they'll stop calling.
+
+:: tell them they have the wrong number
+
+<<audio "rotary-ring-distant" stop>>\
+I head downstairs and into Dad's office, but by the time I get to the phone, it's stopped ringing. Guess they hung up. Dumb gardener company. I guess I'll [[go get some Tylenol]] while I'm down here. Mom said to take it every four hours, like the Advil.
+
+:: go get some Tylenol
+
+<<audio "rotary-ring" loop play>>\
+My heart skips. It actually feels like it jumped into my throat for a second. Why is that phone so //loud//? I am barely at the office door before it starts ringing again. I cross the back to the phone and [[pick it up]].
+
+:: pick it up
+
+<<audio "rotary-ring" stop>><<audio "rotary-pickup" play>>\
+"Hello?"
+
+"Hello, this is Red Hill Landscaping & Lawn Care calling to inform you that your gardener is under the weather and--"
+
+"Sorry, but we don't have a gardener. I think you have the wrong number."
+
+There's a pause on the other end of the line. Probably checking their records or whatever business people do.
+
+"We apologize if there has been a mistake. Please bear with me while I confirm your information. Am I speaking to Will Everette of 27 Chassy Drive, Red Hill, New York?"
+
+I suddenly don't want to be on the call anymore. They shouldn't know my name. Maybe my address, but why would a gardener know a kid's name?
+
+"No..." I say. "Sorry, you... uh... this is the wrong number, so... don't call back please."
+
+I [[hang up the phone]].
+
+:: hang up the phone
+
+<<audio "rotary-hangup" play>>\
+I turn around slowly. The room feels really small, and I'm more aware of the fact that I'm alone in the house than I want to be.
+
+Was that a dark shadow in the window? I look out. Okay, okay, no one's there. Just me being a baby.
+
+I leave the office and head to the kitchen. I'm just nervous because of the fever. My head is swimming, and I'm kinda dizzy from being stuffed up. Not thinking clearly, that's all.
+
+I'm just going to the kitchen for Tylenol... but I make sure the front door is locked before I do. And the back door once I get to the kitchen. Both are locked. Not that I was really worried about it... just smart to check on the way to the Tylenol, which I gulp down quickly.
+
+It tastes kinda gross, but the taste of it brings me back a little bit, and my heart slows down.
+
+Thinking about it, it was probably one of Joey's brothers playing a trick on me. Joey //loves// to scare me.
+
+Still, maybe I'll look up this Red Hill Landscaping & Lawn Care when I get on my computer. And I'll text Joey... he probably won't admit it, though.
+
+Guess I'll head [[back up to my room|Will's Bedroom 2]].

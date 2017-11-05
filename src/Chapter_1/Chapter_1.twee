@@ -1,5 +1,6 @@
 :: Chapter One
 
+<<set $willBedroomBlindOpen to false>>\
 Someone's shaking me.
 
 Ugh. I don't wanna go to school. I was having a good dream, but now I can't remember what it was. Stupid dreams. I think Luisa was in it, though. We were in a big room. Where? 
@@ -152,3 +153,39 @@ That was weird... I didn't even know we had a gardener. I look out the front win
 
 At least the Advil's kicking in. Maybe I'll draw a comic panel or two. Guess I'll head [[back to my bedroom|Will's Bedroom]].\
 <<set $willTemp to 99>>\
+
+:: get back to sleep
+
+I lie back down in my bed. The sun is still too bright, but now that I'm feeling better it's not so bad. I roll over to face away from the window.
+
+Mom calls my cell around 2:30 to check up on me and remind me to take my Advil, which I do. After that, I take a box of tissues into the living room with me and watch T.V. until [[my parents get home]].
+
+:: my parents get home
+
+My mom gets home a little after five and gives me a hug. I think she is trying to be sneaky about checking if I am warm, but she can't complain even if I am because I took all those dumb pills.
+
+Well, I guess I could have hid them, but I didn't think of that... and I felt too sick to worry //that// much about gagging. 
+
+She starts making dinner while we wait for Dad to get home. Dad's actually a better cook, but since he's working late this week, dinner duty is on Mom. He gets in around 6:30 and ruffles my hair. 
+
+"How you feeling, champ? Still burning up?"
+
+"I'm okay."
+
+He sits down to watch Gumball with me for a little while before Mom calls us in for [[dinner|dinner one]].
+
+:: dinner one
+
+Mom and Dad get to eat pasta with red sauce while I get chicken noodle soup--"sick food," Mom calls it. They both talk about their days and ask a few times how I'm feeling. <<if $triedToHidePill>>At some point, Mom tells Dad about how I tried to hide the pill this morning, and Dad teases me about it. Apparently, one time the doctor gave him pills big enough that he had to cut them in half to swallow. He called them "horse pills." I hope I never have to take //those//. I'd actually choke to death. <</if>>When the conversation dies down, I tell Dad about the phone call and ask if we have a gardener.
+
+"A gardener?" he says. "We've never had a gardener. Don't you get an allowance for mowing the lawn?"
+
+"Well, yeah, but maybe for other stuff. I don't know. They said our gardener was sick."
+
+Dad shrugs. "Probably a wrong number."
+
+"Oh," Mom says, "I got you something!" She gets up from her spot at the table and comes back with a bag from CVS. "Bum badabum bum bum baaaaah!" She pulls something out of the bag, all showy-like. It's a bottle of Tylenol. "No more pills!"
+
+I smile, weirdly excited for receiving medicine as a gift. I don't love the taste of Tylenol, but anything is better than gagging on those little red pills. Well, anything except feeling sick. "Thanks, Mom."
+
+After dinner, I take some of the Tylenol before [[turning in early for bed|Chapter Two][$progress to Math.max($progress,1)]].
