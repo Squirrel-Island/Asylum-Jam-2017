@@ -15,3 +15,7 @@
 <</if>>
 
 <<set _visited to $visited[passage()]>>
+
+:: PassageDone
+
+<<replace "#header-passage">><<include "Header Content">><</replace>>

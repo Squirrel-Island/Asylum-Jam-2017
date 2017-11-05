@@ -1,0 +1,8 @@
+:: PassageHeader
+
+<div id="header-passage"><<include "Header Content">></div>
+
+:: Header Content
+
+! Chapter $chapter
+<hr>

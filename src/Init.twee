@@ -4,6 +4,8 @@
 <<set $visited to {}>>
 <<set $currentPassage to "">>
 
+<<set $chapter to 0>> /* current chapter number */
+
 <<set $phone_img to 'img/phone.png'>>
 <<set $conversations to {}>>
 <<set $progress to 0>> /* current chapter progress */
