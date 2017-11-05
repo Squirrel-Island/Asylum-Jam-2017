@@ -20,8 +20,11 @@
     <<set _thread to $threads[$args[0]]>>
     <<set _thread['unread'] to false>>
     <<set _name to $args[0]>>
-    <p><<button "All threads">><<replace "#phoneScreen">><<threads>><</replace>><</button>></p>
-    <p style="text-align: center;">Conversation with _name</p>
+    <div style="margin-top: 0px text-align: center;">
+        <<link "◀">><<replace "#phoneScreen">><<threads>><</replace>><</link>>
+        <div style="display: inline; padding-left: 1em;">Conversation with _name</div>
+    </div>
+
     <<for _i to 0; _i < _thread['messages'].length; _i++>>
         <<set _message to _thread['messages'][_i]>>
         <<capture _message>>

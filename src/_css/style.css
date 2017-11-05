@@ -19,6 +19,10 @@
     margin-top: 0px;
 }
 
+#phoneScreen a:hover{
+    text-decoration: none;
+}
+
 .message-row {
     width: 100px;
 }
