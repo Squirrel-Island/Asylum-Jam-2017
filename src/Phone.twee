@@ -11,15 +11,15 @@
 <<nobr>>
 <<link "Home" "Start">><</link>> |
 <<link "Add Billy content">>
-    <<newText "Billy" "Hey boi!" true false>>
-    <<newText "Billy" "Lel" false false>>
+    <<newText "Billy" "Hey boi!" true false false>>
+    <<newText "Billy" "Lel" false false false>>
     <<replace "#phoneScreen">><<threads>><</replace>>
 <</link>> |
 <<link "Add Sam content">>
-    <<newText "Sam" "wow dot com eh?" true true>>
-    <<newText "Sam" "EH!?" true true>>
-    <<newText "Sam" "yes, dot com indeeed" false true>>
-    <<newText "Sam" "that's what I thought." true true>>
+    <<newText "Sam" "wow dot com eh?" true true true>>
+    <<newText "Sam" "EH!?" true true true>>
+    <<newText "Sam" "yes, dot com indeeed" false true true>>
+    <<newText "Sam" "that's what I thought." true true true>>
     <<replace "#phoneScreen">><<threads>><</replace>>
 <</link>>
 <</nobr>>
