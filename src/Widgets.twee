@@ -1,5 +1,11 @@
 :: widgets
 
+/*
+newText name (string) content (string) incoming (boolean)
+name is the name/company of the person Will is speaking with.
+content is the content of the message.
+incoming is a boolean that represents whether the message is incoming or outgoing message.
+*/
 <<widget "newText">>
     <<set _message to { content: $args[1], incoming: $args[2] }>>
 
