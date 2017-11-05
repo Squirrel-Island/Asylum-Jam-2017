@@ -6,10 +6,10 @@
 
 <<set $chapter to 0>> /* current chapter number */
 
-<<set $phone_img to 'img/phone.png'>>
-<<set $conversations to {}>>
+<<set $threads to {} >>
+<<set $phoneUnread to false>>
+
 <<set $progress to 0>> /* current chapter progress */
-<<set $threads to {}>>
 <<set $triedToHidePill to null>> /* tried to hide the Advil under your sheets instead of taking it */
 <<set $willTemp to 103>> /* Will's current fever temperature */
 <<set $fedSam to [false, false, false, false]>> /* feeding Sam on different days */
@@ -46,6 +46,8 @@
                                    "sfx/door-knock-2.ogg">>
 <<cacheaudio "door-knock-3"        "sfx/door-knock-3.m4a"
                                    "sfx/door-knock-3.ogg">>
+<<cacheaudio "phone-notif"         "sfx/phone-notif.m4a"
+                                   "sfx/phone-notif.ogg">>
 
 <<waitforaudio>>
 

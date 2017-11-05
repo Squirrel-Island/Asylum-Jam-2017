@@ -1,4 +1,5 @@
 :: widgets
+
 <<widget "newText">>
     <<set _message to { content: $args[1], incoming: $args[2] }>>
 
@@ -14,14 +15,41 @@
 
     <<set $threads[$args[0]]['updatedAt'] = new Date()>>
     <<set $threads[$args[0]]['unread'] = true>>
+    <<set $phoneUnread = true>>
+    <<replace "#phone-notif">><<include "Phone Notification">><</replace>>
+
+    <<audio "phone-notif" play>>
+    <<shaketarget "#phone-notif" 700ms>>
+    <<timed 2s>>
+        <<shaketarget "#phone-notif" 700ms>>
+    <</timed>>
 <</widget>>
 
 <<widget "thread">><<nobr>>
     <<set _thread to $threads[$args[0]]>>
     <<set _thread['unread'] to false>>
     <<set _name to $args[0]>>
-    <p><<button "All threads">><<replace "#phoneScreen">><<threads>><</replace>><</button>></p>
-    <p style="text-align: center;">Conversation with _name</p>
+
+    <<for _i to 0; _i < Object.keys($threads).length; _i++>>
+        <<set _key to Object.keys($threads)[_i]>>
+        <<set _thread to $threads[_key]>>
+        <<set _unreadsExist to false>>
+
+        <<capture _thread>>
+            <<if _thread['unread'] == true>>
+                <<set _unreadsExist = true>>
+            <</if>>
+        <</capture>>
+
+        <<set $phoneUnread to _unreadsExist>>
+        <<replace "#phone-notif">><<include "Phone Notification">><</replace>>
+    <</for>>
+
+    <div style="margin-top: 0px text-align: center;">
+        <<link "◀">><<replace "#phoneScreen">><<threads>><</replace>><</link>>
+        <div style="display: inline; padding-left: 1em;">Conversation with _name</div>
+    </div>
+
     <<for _i to 0; _i < _thread['messages'].length; _i++>>
         <<set _message to _thread['messages'][_i]>>
         <<capture _message>>

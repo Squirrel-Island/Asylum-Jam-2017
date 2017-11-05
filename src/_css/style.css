@@ -1,4 +1,4 @@
-.passage h2 { 
+.passage h2 {
     text-decoration: underline;
 }
 
@@ -17,6 +17,10 @@
 
 #phoneScreen h1 {
     margin-top: 0px;
+}
+
+#phoneScreen a:hover{
+    text-decoration: none;
 }
 
 .message-row {

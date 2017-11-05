@@ -1,4 +1,5 @@
 :: Phone
+
 <div style="background-image: url(img/phone.png); background-repeat: no-repeat; height: 700px; width: 712px;">
     <<nobr>>
         <div id="phoneScreen">
@@ -24,5 +25,12 @@
 <</nobr>>
 
 ::Shake
-<<shake>>[img[$phone_img]]<</shake>>
+<<shake>>[img["img/phone.png"]]<</shake>>
 [[Phone]] | <<link "Home" "Start">><</link>>
+
+:: Phone Notification
+<<nobr>><<if $phoneUnread == true>>
+    [img["img/phone_notif_unread.png"]["Phone"]]
+<<else>>
+    [img["img/phone_notif_read.png"]["Phone"]]
+<</if>><</nobr>>

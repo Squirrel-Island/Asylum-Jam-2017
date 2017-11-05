@@ -4,5 +4,5 @@
 
 :: Header Content
 
-! Chapter $chapter
+! Chapter $chapter <span id="phone-notif" style="float: right;"><<include "Phone Notification">></span>
 <hr>
