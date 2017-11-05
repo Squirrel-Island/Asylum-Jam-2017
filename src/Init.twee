@@ -2,7 +2,7 @@
 
 /* Initialize variables */
 <<set $phone_img to 'img/phone.png'>>
-<<set $conversations to {}>>
+<<set $threads to {}>>
 <<set $triedToHidePill to null>> /* tried to hide the Advil under your sheets instead of taking it */
 <<set $willTemp to 103>> /* Will's current fever temperature */
 <<set $fedSam to [false, false, false, false]>> /* feeding Sam on different days */

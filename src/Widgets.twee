@@ -2,27 +2,61 @@
 <<widget "newText">>
     <<set _message to { content: $args[1], incoming: $args[2] }>>
 
-    <<if $conversations.hasOwnProperty($args[0]) == false>>
-        <<set $conversations[$args[0]] to {}>>
+    <<if $threads.hasOwnProperty($args[0]) == false>>
+        <<set $threads[$args[0]] to {}>>
     <</if>>
 
-    <<if $conversations[$args[0]].hasOwnProperty('messages')>>
-        <<set $conversations[$args[0]]['messages'].push(_message)>>
+    <<if $threads[$args[0]].hasOwnProperty('messages')>>
+        <<set $threads[$args[0]]['messages'].push(_message)>>
     <<else>>
-        <<set $conversations[$args[0]]['messages'] to [_message]>>
+        <<set $threads[$args[0]]['messages'] to [_message]>>
     <</if>>
 
-    <<set $conversations[$args[0]]['updatedAt'] = new Date()>>
+    <<set $threads[$args[0]]['updatedAt'] = new Date()>>
+    <<set $threads[$args[0]]['unread'] = true>>
 <</widget>>
 
-<<widget "listMessages">>
-    <<set _thread to $conversations[$args[0]]>>
+<<widget "thread">>
+    <<set _thread to $threads[$args[0]]>>
 
     Thread last updated:
     <<print _thread['updatedAt']>>
 
-    <<for $i to 0; $i < _thread['messages'].length; $i++>>
-        Incoming: <<print _thread['messages'][$i]['incoming']>>
-        Content: <<print _thread['messages'][$i]['content']>>
+    Unread status: <<print _thread['unread']>>
+
+    <<for _i to 0; _i < _thread['messages'].length; _i++>>
+        Incoming: <<print _thread['messages'][_i]['incoming']>>
+        Content: <<print _thread['messages'][_i]['content']>>
     <</for>>
+
+    <<set _thread['unread'] = false>>
+
+    <<button "All threads">>
+            <<replace "#phoneScreen">><<threads>><</replace>>
+    <</button>>
+<</widget>>
+
+<<widget "threads">>
+    <<if Object.keys($threads).length == 0>>
+        You have no messages.
+    <<else>>
+        <<set _keys to Object.keys($threads)>>
+        <<set _links to {} >>
+
+        <<for _i to 0; _i < _keys.length; _i++>>
+            <<set _key to _keys[_i]>>
+
+            <<capture _key>>
+                <<set _thread to $threads[_key]>>
+                <<set _indexOfLastMessage = _thread['messages'].length - 1>>
+
+                <<link _key>>
+                    <<replace "#phoneScreen">><<thread _key>><</replace>>
+                <</link>>
+                <<print _thread['messages'][_indexOfLastMessage]['content']>>
+            <</capture>>
+        <</for>>
+    <</if>>
+
+    <<button "Debug | Chapter Four" "Chapter Four">><</button>>
 <</widget>>
