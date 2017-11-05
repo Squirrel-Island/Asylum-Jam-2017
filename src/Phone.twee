@@ -1,0 +1,28 @@
+:: Phone
+<div style="background-image: url(img/phone.png); background-repeat: no-repeat; height: 700px; width: 712px;">
+    <<nobr>>
+        <div id="phoneScreen">
+            <<threads>>
+        </div>
+    <</nobr>>
+</div>
+<<nobr>>
+<<link "Home" "Start">><</link>> |
+<<link "Add Billy content">>
+    <<newText "Billy" "Hey boi!" true>>
+    <<newText "Billy" "Lel" false>>
+    <<replace "#phoneScreen">><<threads>><</replace>>
+<</link>> |
+<<link "Add Sam content">>
+    <<newText "Sam" "wow dot com eh?" true>>
+    <<newText "Sam" "EH!?" true>>
+    <<newText "Sam" "yes, dot com indeeed" false>>
+    <<newText "Sam" "that's what I thought." true>>
+    <<replace "#phoneScreen">><<threads>><</replace>>
+<</link>> |
+[[Shake]]
+<</nobr>>
+
+::Shake
+<<shake>>[img[$phone_img]]<</shake>>
+[[Phone]] | <<link "Home" "Start">><</link>>
