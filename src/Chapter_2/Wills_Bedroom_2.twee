@@ -2,9 +2,14 @@
 
 <<if visited() is 1>>I return to my bedroom and close the door. It won't block the sound of that phone if it does ring again, not really, but it makes me feel a little better.
 
-<</if>><<if _previous is "Read posts">>I close my laptop and get up from my desk.
+<</if>><<if previous() is "Read posts">>I close my laptop and get up from my desk.
 
-<</if>>There are piles of clothes all over my floor, and my desk's cluttered with a bunch of [[my comics and stuff|Will's Desk 2]]. There's a [[fish tank|fish tank 2]] on top of my dresser with my goldfish, Sam, swimming inside. If I open the blinds, I can see the backyard from [[my window|my window 2]].
+<</if>>There are piles of clothes all over my floor, and my desk's cluttered with a bunch of [[my comics and stuff|Will's Desk 2]]. There's a [[fish tank|fish tank 2]] on top of my dresser with my goldfish, Sam, swimming inside. If I open the blinds, I can see the backyard from [[my window|my window 2]].\
+\
+<<if $readPosts.reduce(function(a,b) { return a && b; })>>
+
+Maybe I should just go downstairs, make some popcorn, and [[watch T.V. for the rest of the day]].
+<</if>>
 
 :: fish tank 2
 

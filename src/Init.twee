@@ -16,6 +16,13 @@
 <<set $willBedroomBlindOpen to false>> /* blind in Will's bedroom open? */
 <<set $comicProgression to 0>> /* how far Will is in his new comic */
 <<set $readPosts to [false, false, false]>> /* read posts on RH Landscaping in Ch2 */
+<<set $calledThePolice to false>> /* called the police in Ch 2 */
+<<set $callResponse to /* your responses to the call in Ch 3 */
+    { ignore: false
+    , hangup: false
+    , unplug: false
+    , answer: false
+    }>>
 
 /* Initialize widgets */
 <<include "widgets">>
@@ -33,6 +40,12 @@
                                    "sfx/rotary-pickup.ogg">>
 <<cacheaudio "rotary-hangup"       "sfx/rotary-hangup.m4a"
                                    "sfx/rotary-hangup.ogg">>
+<<cacheaudio "door-knock"          "sfx/door-knock.m4a"
+                                   "sfx/door-knock.ogg">>
+<<cacheaudio "door-knock-2"        "sfx/door-knock-2.m4a"
+                                   "sfx/door-knock-2.ogg">>
+<<cacheaudio "door-knock-3"        "sfx/door-knock-3.m4a"
+                                   "sfx/door-knock-3.ogg">>
 
 <<waitforaudio>>
 

@@ -1,9 +1,9 @@
 :: Chapter Two
 
-<<audio "rotary-ring-distant" loop play>>\
-//Gumball and I are plotting a fake heist in the park. Daxus has been sad recently since there haven't been enough villains, so we need to make him feel important again. But somewhere in the park, an old lady won't pick up her stupid phone, so it keeps ringing and ringing and...//
+<<audio "rotary-ring-distant" loop play>><<set $chapter to 2>>\
+//Gumball and I are in the park plotting a fake heist. Since there haven't been any crimes recently, Daxus has been sad, so we need to make him feel important again. But me and Gumball can't hear each other because, somewhere in the park, an old lady won't pick up her stupid phone, so it keeps ringing and ringing and...//
 
-...ringing. I open my eyes. That old phone is ringing downstairs. The clock on my desk says it's 11:00... probably that weird gardener company again. I get up and blow my nose. A bunch of green gunk comes out, but I still can't breathe very well. My face feels hot and slick.
+...ringing. I open my eyes. It's the old phone in Dad's office. The clock on my desk says it's 11:00... probably that weird gardener company again. I get up and blow my nose. A bunch of green gunk comes out, but I still can't breathe very well. My face feels hot and slick.
 
 The phone keeps ringing. Don't they ever quit? I should [[tell them they have the wrong number]] so they'll stop calling.
 
@@ -54,3 +54,107 @@ Thinking about it, it was probably one of Joey's brothers playing a trick on me.
 Still, maybe I'll look up this Red Hill Landscaping & Lawn Care when I get on my computer. And I'll text Joey... he probably won't admit it, though.
 
 Guess I'll head [[back up to my room|Will's Bedroom 2]].
+
+:: watch T.V. for the rest of the day
+
+I head downstairs, go into the living room, and turn up the T.V. really loud. The office is across the hall, but maybe the T.V. will drown out that phone... if someone calls.
+
+I head to the kitchen, make popcorn, and bring it back to the living room. Rain rolls down the window and blurs the front yard. No one's out today. Mom would say it's dreary, but I like the rain. Still, I close the curtains before settling into the couch. Maybe I'm being a baby, but I have this weird feeling someone is watching me. 
+
+[[Adventure Time]] is on, which is good.
+
+:: Adventure Time
+
+It's a rerun where Finn and Jake go on an RPG adventure in a train. Not a bad episode, but not my favorite either. Finn is just--
+
+What is that shadow behind the curtain!? It looks... like a person... is standing there.
+
+Should I [[check behind the curtains]]? [[Call the police]]? [[Hide in my room]]?
+
+
+:: check behind the curtains
+
+I move slowly, shifting the popcorn bowl from my lap to the living room table and creeping over to the window. I grip the curtain... my knuckles are white. Do I really want to do this? Yeah. Yeah, I have to know. I throw the curtain open.
+
+And no one is there.
+
+Breath escapes me that I didn't know I was even holding in. I'm such a baby, freaking myself out. I laugh a little at myself and sit down to watch T.V. again. But not before closing the curtain.
+
+I watch T.V. until [[my parents get home|my parents get home 2]].
+
+:: Hide in my room
+
+I don't turn off the T.V. or anything. I just move the popcorn bowl off my lap and run, taking the stairs two at a time. It's like that feeling you get when you're coming up alone at night, and you're //sure// something's behind you. Except, this time I actually saw something.
+
+Or maybe not.
+
+I slam the door to my bedroom.
+
+Maybe I didn't see anything. Not really, anyway. If I close my eyes and try to imagine it, wasn't that shadow the more the shape of a tree branch? It was too still to really be a person. I'm such a baby, freaking myself out. I laugh a little at myself, but don't leave my room. 
+
+I hang out in my room until [[my parents get home|my parents get home 2]].
+
+:: Call the police
+
+<<set $calledThePolice to true>>\
+I take out my cell without looking away from the shadow and dial 911. The person who picks up sounds like a nice lady. She tells me to calm down and tell her where I am and what's the problem. She asks a lot of questions that I don't understand how they're important, and then someone's knocking at my front door.
+
+"Police!" I hear, and the lady on the phone tells me it's okay and that I should answer the door, so I do.
+
+The officers ask me more questions and then go searching around the house and around the yard. One of them leaves (the other stays with me) to drive around the neighborhood. When he comes back, he shakes his head at the other officer.
+
+"Well, we didn't find anyone," he says. "Are you sure there was a person out there?"
+
+I tell him (again) that I saw a shadow and then about the weird calls.
+
+"Sounds like you got a little spooked being around here by yourself. Do like living with your parents?"
+
+"Yeah, why?" I really don't know why he's asking about my parents.
+
+"Okay, we'll have someone patrol around the neighborhood for a couple days. You know, to make sure, if it was a person, they don't come back, okay?"
+
+I nod.
+
+He gives me a funny look, almost like he doesn't believe something I said, then tells me to lock the doors (which he didn't need to tell me) and heads out.
+
+I lock the doors behind him and go back to watching T.V. until [[my parents get home|my parents get home 2]].
+
+:: my parents get home 2
+
+Mom gets home by 5:00. Dad surprises both of us by showing up ten minutes later and insists on making dinner. By 6:30, we're all eating steak and mashed potatoes. <<if $calledThePolice>>I don't tell them about the police showing up. They might get mad at me for calling.<</if>>
+
+After they make me tell them for the thousandth time how I'm feeling (a little better since I can magically breathe again), I fill them in on the weird phone call, including everything from them knowing my name to the results on the internet.
+
+"Well," Dad says. "It sounds to me like they've recently restarted their business with a very aggressive marketing campaign."
+
+"I bet they're trying to weasle some work out from under Green Fields," Mom says.
+
+"But they had my name..."
+
+"All public record," Dad says. "I doubt if their marketing folks are that bright, though, since they're talking to a kid. Probably got the names all mixed up. Tell you what, I'll call them up first thing in the morning and sort this out. In the meantime, you just ignore their calls."
+
+He brightens up. "On a happier note, we finished our release early. I have a presentation at 10:00 tomorrow, but after that I can come home and take care of you!"
+
+I smile. "You have the day off!"
+
+"No"--Dad laughs--"not off, but I can work from home after the presentation.<<if $calledThePolice>>"
+
+There's a knock at the door.
+
+"I'll get it," Dad says. He gets up and heads for the door. Mom and I keep eating. We can't hear much more than mumbling from the front door, and eventually Dad comes back. "You called the police?"
+
+Oh no. He's gonna be mad.
+
+"Y-yeah... I got scared. I thought I saw someone outside. I'm sorry."
+
+He looks to Mom, and she speaks up. "Oh, honey. I'm sorry you got scared. We hate leaving you here alone."
+
+"Don't be sorry, champ," Dad says. "If you felt like you were in danger, that was the right thing to do. I'll get home as soon as I can tomorrow, okay?"
+
+"Okay."<<else>> I don't like leaving you here by yourself."
+
+"Neither of us do," Mom adds. She turns to Dad. "But that's great, dear! Now you can spend tomorrow with Will."<</if>>
+
+The rest of dinner passes without another mention of the phone. <<if $calledThePolice>>Dad will be home by lunch tomorrow, he's gonna call those weird gardeners and tell them not to call me again, and the police will be watching my house<<else>>Dad will be home by lunch tomorrow, and he's gonna call those weird gardeners and tell them not to call me again<</if>>.
+
+Tonight, I [[go to bed feeling better about tomorrow|Chapter Three][$progress to Math.max($progress,2)]]. 

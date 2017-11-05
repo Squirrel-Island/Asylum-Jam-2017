@@ -1,3 +1,108 @@
 :: Chapter Three
 
-Chapter three start.
+<<set $chapter to 3>>\
+It's almost 11:30, and the phone didn't ring at all today. I guess Dad must've called those gardener people and told them not to call the house anymore. Mom woke me up early to take my temperature, but she didn't give me any Tylenol since I was down at 99.2 and felt okay. I think I might be able to go into school tomorrow. Amazingly, I actually //want// to go back to school. It's lonely (and kinda freaky) being here alone, and I miss Joey's jokes about Marvin Connery's B.O. 
+
+I'd also like to see Luisa. I had that dream again last night, the one about dancing with her in the gym. We were about to kiss (again) when Mom woke me up. Ugh. Well, I finally worked up the nerve to text her and ask her to hang out with me this weekend. She hasn't responded yet. I hope she doesn't think I'm crushing on her... I guess I am, but will she think I'm weird if she knows? I wonder if she likes me too...
+
+I kept the living room curtains open all morning while I watched T.V. and didn't see any weirdos out there.<<if $calledThePolice>> A police car passed by my house a couple times, though. When the officer saw me looking out the window, he waved.<</if>>
+
+Dad should be home in like thirty minutes, and I'm gonna ask him to go on a walk with me. Mom would never let me out while I still had a fever, but I think I can convince Dad. Besides, it's a really nice day out. In the meantime, I can [[keep watching T.V.|nope.jpeg]], go upstairs and [[work on a comic|nope.jpeg]], or [[take a nap|nope.jpeg]].
+
+:: nope.jpeg
+
+<<audio "rotary-ring-distant" loop play>>\
+The phone rings, and my mouth goes dry.
+
+Okay, hold up, Will. Relax. Maybe Dad didn't call them yet. It's probably no big deal.
+
+But still, the ringing makes me nervous. I'll just go [[tell them not to call back]].
+
+:: tell them not to call back
+
+<<audio "rotary-ring-distant" stop>><<audio "rotary-ring" loop play>>\
+I head into Dad's office and look out the window. There's no one in sight, which is a bit of a relief. I half-expected that shadow to... well, nevermind. I almost pick up the phone, then remember Dad telling me not to answer it.
+
+<<if not $callResponse.ignore>>[[ignore it]]<<else>><span style="text-decoration: line-through;">ignore it</span><</if>> / \
+<<if not $callResponse.unplug>>[[unplug it]]<<else>><span style="text-decoration: line-through;">unplug it</span><</if>> / \
+<<if not $callResponse.answer>>[[answer it]]<<else>><span style="text-decoration: line-through;">answer it</span><</if>> / \
+<<if not $callResponse.hangup>>[[hang up]]<<else>><span style="text-decoration: line-through;">hang up</span><</if>>
+
+:: ignore it
+
+<<set $callResponse.ignore to true>>\
+I try to ignore the call, hoping they'll hang up.
+
+I wait.
+
+<<timed 3s>>And wait.
+
+<<next>>And wait...
+
+<<next>>And wait.....
+
+<<next>>And... they're not going to hang up, are they?
+
+<<if not $callResponse.unplug>>[[unplug it]]<<else>><span style="text-decoration: line-through;">unplug it</span><</if>> / \
+<<if not $callResponse.answer>>[[answer it]]<<else>><span style="text-decoration: line-through;">answer it</span><</if>> / \
+<<if not $callResponse.hangup>>[[hang up]]<<else>><span style="text-decoration: line-through;">hang up</span><</if>>
+<</timed>>
+
+:: hang up
+
+<<audio "rotary-ring" stop>><<audio "rotary-hangup" play>><<set $callResponse.hangup to true>>\
+I hang up the phone. <span id="get-out">I want to <<link "get out of here">><</link>>.</span>
+
+<<timed 2.5s>>\
+<<replace "#get-out">>I want to get out of here.<</replace>>\
+<<script>>document.getElementById("get-out").style = "text-decoration: line-through; font-weight: bold; color: red;";<</script>>\
+<<audio "rotary-ring" loop play>>\
+\
+They call back.
+
+<<if not $callResponse.ignore>>[[ignore it]]<<else>><span style="text-decoration: line-through;">ignore it</span><</if>> / \
+<<if not $callResponse.unplug>>[[unplug it]]<<else>><span style="text-decoration: line-through;">unplug it</span><</if>> / \
+<<if not $callResponse.answer>>[[answer it]]<<else>><span style="text-decoration: line-through;">answer it</span><</if>>
+<</timed>>
+
+:: answer it
+
+<<audio "rotary-ring" stop>><<audio "rotary-pickup" play>><<set $callResponse.answer to true>>\
+I answer the phone. "What do you want? I told you to stop calling!"
+
+"Hello. This is Red Hill Landscaping & Lawn Care. We apologize that you felt the need to cancel our service and will be sending a representative over to conduct a brief survey on your experience. If you would be so kind as to unlock your doors, Will... I'd really appreciate it. See you soon."
+
+<<link "They hang up.">><<audio "rotary-hangup" play>><<goto "banging on door">><</link>>
+
+:: unplug it
+
+<<audio "rotary-ring" stop>><<set $callResponse.unplug to true>>\
+I crawl under Dad's desk and unplug the phone from the wall. The ringing stops. I'm suddenly terrified that it'll start ringing again even though it's unplugged, like a horror movie or something. Part of me wants to plug it back in, but I don't.
+
+/* TODO: finish with texts */
+
+:: banging on door
+
+<div id="switch-up">I put the phone down and think about what to do. It sounded like someone is gonna come to the house. I'm shaking. Dad should be home soon, but what if this person beats him here?</div>
+
+<<timed 4s>><<audio "door-knock" play>><<repeat `random(4,16) + "s"`>><<audio `either("door-knock", "door-knock-2", "door-knock-3")` play>><</repeat>><<replace "#switch-up">>
+
+@@color:red;font-weight:bold;Someone bangs on the front door.@@ 
+
+I run to the window, but I can't see who's outside. I feel like they can see //me//, though. I pull the curtain shut, back into the far corner, and huddle into a ball against the wall. 
+
+It feels safer.
+
+It isn't safer.
+
+I can't stop myself from crying.
+
+What is this person gonna do to me? I think they want to hurt me. I have to think. What would Daxus do in this situation?
+
+That's an easy one. He'd do his research and take down the baddie... but I'm not a superhero, I'm a kid... Somebody, please help me.
+
+[[call the police]] / [[grab a knife from the kitchen]] / [[hide upstairs]]
+<</replace>><</timed>>
+
+:: call the police
+
