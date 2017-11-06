@@ -82,9 +82,13 @@ I answer the phone. "What do you want? I told you to stop calling!"
 <<audio "rotary-ring" stop>><<set $callResponse.unplug to true>>\
 I crawl under Dad's desk and unplug the phone from the wall. The ringing stops. I'm suddenly terrified that it'll start ringing again even though it's unplugged, like a horror movie or something. Part of me wants to plug it back in, but I don't.
 
-/* TODO: finish with texts */
-
 <<if previous() is "Phone">><<goto "banging on door">><</if>>
+
+<<nobr>>
+<<repeat 1s>>
+/* TODO: text from unknown number: "PICK UP THE PHONE" */
+<</repeat>>
+<</nobr>>
 
 :: banging on door
 
