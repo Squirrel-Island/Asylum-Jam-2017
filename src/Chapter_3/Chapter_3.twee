@@ -8,9 +8,9 @@ I'd also like to see Luisa. I had that dream again last night, the one about dan
 <<silently>>
     <<if previous() isnot "Phone">>
         <<newText "Luisa 💙" "Hey Luisa, it's Will. I finally got a phone!" false false false>>
-        <<newText "Luisa 💙" "I was kinda wondering, if maybe, some time next week you would like to go get pizza or somethinggg?" false false false>>
+        <<newText "Luisa 💙" "I was kinda wondering, if maybe, some time this weekend you'd wanna like go get pizza or somethinggg?" false false false>>
     <</if>>
-<</silently>>
+<</silently>>\
 send her a text, but I do. I'm nervous now, but thinking about her makes me happy<</linkreplace>>.
 
 I kept the living room curtains open all morning while I watched T.V. and didn't see any weirdos out there.<<if $calledThePolice>> A police car passed by my house a couple times, though. When the officer saw me looking out the window, he waved.<</if>>
@@ -171,9 +171,10 @@ The footsteps down the hall stop at the open door and come inside. I can see big
 <<if $textedLuisa>>\
 <<silently>>
     <<if previous() isnot "Phone">>
-        <<newText "Luisa" "Hey Will! Yeah, definitely. How about next Friday?" true true true>>
+        <<newText "Luisa" "Hey Will! Yeah, definitely. How about Saturday?" true true true>>
     <</if>>
 <</silently>>
+
  But my phone vibrates in my hand and makes a too loud notification noise. Luisa texted me back. The boots stop in front of the desk, and I try to cower back farther. If I could, I'd burrow into the wall like a mole. The boots turn into knees on the ground, then I'm looking at something... not a face... a mask. A really scary mask.
 
 The person grabs me and yanks me out from under the desk. I hit my head, and it really really hurts. He hits me with something hard. I feel like I'm looking into the night sky, but the stars are all flickering black spots.
@@ -238,8 +239,9 @@ Instead, I clap a hand over my mouth and hold it in. He can't hear me. He can't.
 <<linkappend "I keep still.">>\
 <<if $textedLuisa>>\
 <<silently>>
-    <<newText "Luisa" "Hey Will! Yeah, definitely. How about next Friday?" true true true>>
+    <<newText "Luisa" "Hey Will! Yeah, definitely. How about Saturday?" true true true>>
 <</silently>>
+
  But my phone vibrates in my hand and makes a too loud notification noise. Luisa texted me back. The boots stop in front of my bed, and I try to cower back farther. If I could, I'd burrow into the wall like a mole. The boots turn into knees on the ground, then I'm looking at something... not a face... a mask. A really scary mask.
 
 The person grabs me and yanks me out from under my bed. I hit my head, and it really really hurts. He hits me with something hard. I feel like I'm looking into the night sky, but the stars are all flickering black spots.
