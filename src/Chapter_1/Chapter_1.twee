@@ -1,6 +1,19 @@
 :: Chapter One
 
-<<set $willBedroomBlindOpen to false>><<set $chapter to 1>>\
+<<silently>>
+    <<set $willBedroomBlindOpen to false>><<set $chapter to 1>>
+    <<timed 1s>>
+        /* Initialize text messages */
+        /* name content incoming? notify? unread? */
+        <<newText "Joey" "Hey Joey!" false false false>>
+        <<newText "Joey" "My parents finally got me a phone so we can text now. 😃" false false false>>
+        <<newText "Joey" "That's neat Will. Can't talk right now tho. Basketball 🏀" true false false>>
+        <<newText "Joey" "Okay, ttyl" false false false>>
+
+        <<newText "Mom" "Hey honey, it's Mom. Feel free to message me at any time. ❤️" true false false>>
+        <<newText "Mom" "Okay Mom, thanks" false false false>>
+    <</timed>>
+<</silently>>
 Someone's shaking me.
 
 Ugh. I don't wanna go to school. I was having a good dream, but now I can't remember what it was. Stupid dreams. I think Luisa was in it, though. We were in a big room. Where? 
@@ -110,7 +123,12 @@ The digital clock on my desk says 10:53. The Advil must've worn off.
 I should [[get out of bed|Will's Bedroom]].
 
 :: go take some Advil
-
+<<silently>>
+    <<if previous() isnot "Phone">>
+        <<newText "Dad" "Hey champ, hope you're feeling better! Make sure to take it easy and drink lots of water." true true true>>
+        <<newText "Dad" "Thanks Dad... I'll try." false false true>>
+    <</if>>
+<</silently>>
 I leave my room and head downstairs to the kitchen. There is a piece of paper on the table on top of which are two sets of red pills. On the paper above the first set is "10:00" and above the second set "2:00". The time on the stove says 10:58... woops. This time, I take both pills without a problem, but I still feel groggy and awful, like I'm moving with weights tied to me. It sucks that medicine doesn't work faster.
 
 How long does it take them to kick in? I look at the clock. 10:59 becomes [[11:00]].
@@ -161,7 +179,13 @@ I lie back down in my bed. The sun is still too bright, but now that I'm feeling
 Mom calls my cell around 2:30 to check up on me and remind me to take my Advil, which I do. After that, I take a box of tissues into the living room with me and watch T.V. until [[my parents get home]].
 
 :: my parents get home
-
+<<silently>>
+    <<if previous() isnot "Phone">>
+        <<newText "Joey" "Hey, I didn't see ya at school today. Are you okay??" true true true>>
+        <<newText "Joey" "Ehh, pretty sick TBH. I think I'm gonna be out for another day or two..." false false true>>
+        <<newText "Joey" "Gotcha, feel better dude. Marvin's been acting up a storm here. I hafta tell ya when you're back." true false false>>
+    <</if>>
+<</silently>>
 My mom gets home a little after five and gives me a hug. I think she is trying to be sneaky about checking if I am warm, but she can't complain even if I am because I took all those dumb pills.
 
 Well, I guess I could have hid them, but I didn't think of that... and I felt too sick to worry //that// much about gagging. 

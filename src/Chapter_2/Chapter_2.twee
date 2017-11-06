@@ -1,5 +1,7 @@
 :: Chapter Two
-
+<<silently>>
+    <<newText "Dad" "Hey, heard from Mom you're still not feeling well. Hang in there buddy!" true false true>>
+<</silently>>
 <<audio "rotary-ring-distant" loop play>><<set $chapter to 2>>\
 //Gumball and I are in the park plotting a fake heist. Since there haven't been any crimes recently, Daxus has been sad, so we need to make him feel important again. But me and Gumball can't hear each other because, somewhere in the park, an old lady won't pick up her stupid phone, so it keeps ringing and ringing and...//
 
