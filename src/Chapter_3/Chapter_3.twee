@@ -5,7 +5,7 @@ It's almost 11:30, and the phone didn't ring at all today. I guess Dad must've c
 
 I'd also like to see Luisa. I had that dream again last night, the one about dancing with her in the gym. We were about to kiss (again) when Mom woke me up. Ugh. I'm thinking about texting her and asking if she wants to hang out this weekend. Would that make things weird? I hope not. She might think I'm crushing on her, but I guess I am. I wonder if she likes me too... I dunno if I should <<linkreplace "send her a text">>\
 <<set $textedLuisa to true>>\
-/* TODO: send text */\
+/* TODO: send text: Will asking Luisa (nervously) if she'd like to hang out this weekend */\
 send her a text, but I do. I'm nervous now, but thinking about her makes me happy<</linkreplace>>.
 
 I kept the living room curtains open all morning while I watched T.V. and didn't see any weirdos out there.<<if $calledThePolice>> A police car passed by my house a couple times, though. When the officer saw me looking out the window, he waved.<</if>>
@@ -84,9 +84,11 @@ I crawl under Dad's desk and unplug the phone from the wall. The ringing stops. 
 
 /* TODO: finish with texts */
 
+<<if previous() is "Phone">><<goto "banging on door">><</if>>
+
 :: banging on door
 
-<div id="switch-up">I put the phone down and think about what to do. It sounded like someone is gonna come to the house. I'm shaking. Dad should be home soon, but what if this person beats him here?</div>
+<div id="switch-up"><<if $callResponse.answer>>I put the phone down and think about what to do. It sounded like someone is gonna come to the house. I'm shaking. Dad should be home soon, but what if this person beats him here?<<else>>How did they get my number? How? They shouldn't know my number! Dad should be home soon. I hope he gets here. I'm scared.<</if>></div>
 
 <<timed 4s>><<audio "door-knock" play>><<repeat `random(4,16) + "s"`>><<audio `either("door-knock", "door-knock-2", "door-knock-3")` play>><</repeat>><<replace "#switch-up">>
 
@@ -158,7 +160,7 @@ The footsteps down the hall stop at the open door and come inside. I can see big
 
 <<linkappend "I keep still.">>\
 <<if $textedLuisa>>\
-/* TODO: send text from Luisa */
+/* TODO: send text: Luisa agrees to date from above */
  But my phone vibrates in my hand and makes a too loud notification noise. Luisa texted me back. The boots stop in front of the desk, and I try to cower back farther. If I could, I'd burrow into the wall like a mole. The boots turn into knees on the ground, then I'm looking at something... not a face... a mask. A really scary mask.
 
 The person grabs me and yanks me out from under the desk. I hit my head, and it really really hurts. He hits me with something hard. I feel like I'm looking into the night sky, but the stars are all flickering black spots.
@@ -222,7 +224,7 @@ Instead, I clap a hand over my mouth and hold it in. He can't hear me. He can't.
 
 <<linkappend "I keep still.">>\
 <<if $textedLuisa>>\
-/* TODO: send text from Luisa */
+/* TODO: send text: Luisa agrees to date from above */
  But my phone vibrates in my hand and makes a too loud notification noise. Luisa texted me back. The boots stop in front of my bed, and I try to cower back farther. If I could, I'd burrow into the wall like a mole. The boots turn into knees on the ground, then I'm looking at something... not a face... a mask. A really scary mask.
 
 The person grabs me and yanks me out from under my bed. I hit my head, and it really really hurts. He hits me with something hard. I feel like I'm looking into the night sky, but the stars are all flickering black spots.
