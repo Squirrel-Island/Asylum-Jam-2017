@@ -1,5 +1,5 @@
 :: Epilogue - Bad
-
+<<set $chapter to "Epilogue">>\
 Jody Moran parks her rose red Toyota on the corner of Chassy Drive, steps onto the sidewalk, and slings her messenger bag over her shoulder. She's always liked Chassy Drive--has, in fact, considered moving here herself from time to time. Jody always tells her friends, the best way to find a house is to find two good neighbors and move in between them.
 
 She walks down the path to 1 Chassy Drive, digs through her bag, and drops a couple letters into the mailbox. John and Linda Felmann live here, a nice couple. Jody finds herself thinking of most people on Chassy Drive as "a nice couple" or a "nice family" or, in some cases, "a nice young man." Finding two neighbors to move between here would be no trouble at all.
@@ -17,7 +17,7 @@ Really, it's such a shame.
 //End.//
 
 :: Epilogue - Neutral
-
+<<set $chapter to "Epilogue">>\
 I wake up in a white room, and for some reason I'm sore all over. Next to me, someone says, "he's awake!" and I remember everything. The phone calls, the guy in the mask, the police. I guess I'm in a hospital.
 
 Mom's face appears above me. Her eyes are red like she's been crying. I feel bad that she's been crying over me. 
@@ -67,7 +67,7 @@ Maybe, once my leg is healed, I'll ask Luisa out after all.
 //End.//
 
 :: Epilogue - Good
-
+<<set $chapter to "Epilogue">>\
 The police asked me a bunch of questions after they took me to the station, but ultimately, they didn't find the guy who broke into my house. The weird part? There was no trace that he'd been there. I thought there was usually some sort of DNA, hair, something like that, but they couldn't even prove anyone other than me was home.
 
 I get to go to school today, and weirdly enough, I'm actually excited. I barely make it into the classroom before Joey is all over me. "Oh, look, it's Mr. I-Was-Fighting-Crime over here!" he exclaims. "So whatcha do to him? Throw him into the sun? Feed him to wolves. Use your laser vision on his cajones?"

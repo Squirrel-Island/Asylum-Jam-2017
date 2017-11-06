@@ -4,7 +4,7 @@
         <<newText "Dad" "Hey, heard from Mom you're still not feeling well. Hang in there buddy!" true false true>>
     <</if>>
 <</silently>>
-<<audio "rotary-ring-distant" loop play>><<audio "rain" loop play>><<set $chapter to 2>>\
+<<audio "rotary-ring-distant" loop play>><<audio "rain" loop play>><<set $chapter to "Chapter Two">>\
 //Gumball and I are in the park plotting a fake heist. Since there haven't been any crimes recently, Daxus has been sad, so we need to make him feel important again. But me and Gumball can't hear each other because, somewhere in the park, an old lady won't pick up her stupid phone, so it keeps ringing and ringing and...//
 
 ...ringing. I open my eyes. It's the old phone in Dad's office. The clock on my desk says it's 11:00... probably that weird gardener company again. I get up and blow my nose. A bunch of green gunk comes out, but I still can't breathe very well. My face feels hot and slick.

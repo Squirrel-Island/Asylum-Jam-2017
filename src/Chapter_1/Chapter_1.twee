@@ -1,7 +1,7 @@
 :: Chapter One
 
 <<silently>>
-    <<set $willBedroomBlindOpen to false>><<set $chapter to 1>>
+    <<set $willBedroomBlindOpen to false>><<set $chapter to "Chapter One">>
     <<timed 1s>>
         /* Initialize text messages */
         /* name content incoming? notify? unread? */
