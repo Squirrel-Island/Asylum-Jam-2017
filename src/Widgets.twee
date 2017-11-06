@@ -47,14 +47,11 @@ unread is a boolean that represents whether a message is considered unread when 
 
     <<for _i to 0; _i < Object.keys($threads).length; _i++>>
         <<set _key to Object.keys($threads)[_i]>>
-        <<set _thread to $threads[_key]>>
         <<set _unreadsExist to false>>
 
-        <<capture _thread>>
-            <<if _thread['unread'] == true>>
-                <<set _unreadsExist = true>>
-            <</if>>
-        <</capture>>
+        <<if $threads[_key]['unread'] == true>>
+            <<set _unreadsExist to true>>
+        <</if>>
 
         <<set $phoneUnread to _unreadsExist>>
         <<replace "#phone-notif">><<include "Phone Notification">><</replace>>
