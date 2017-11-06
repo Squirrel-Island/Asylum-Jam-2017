@@ -183,7 +183,7 @@ Mom calls my cell around 2:30 to check up on me and remind me to take my Advil, 
     <<if previous() isnot "Phone">>
         <<newText "Joey" "Hey, I didn't see ya at school today. Are you okay??" true true true>>
         <<newText "Joey" "Ehh, pretty sick TBH. I think I'm gonna be out for another day or two..." false false true>>
-        <<newText "Joey" "Gotcha, feel better dude. Marvin's been acting up a storm here. I hafta tell ya when you're back." true false false>>
+        <<newText "Joey" "Gotcha, feel better dude. Marvin's been acting up a storm here. I hafta tell ya when you're back." true false true>>
     <</if>>
 <</silently>>
 My mom gets home a little after five and gives me a hug. I think she is trying to be sneaky about checking if I am warm, but she can't complain even if I am because I took all those dumb pills.
