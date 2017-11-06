@@ -201,7 +201,7 @@ The mask man stomps on my leg, and my bone snaps. I scream. He grinds his boot i
 
 The sirens are closer now. Someone yells, and the pressure goes away.
 
-"It's okay," a voice says. "You're gonna be okay." Everything looks dim, but I think I'm looking at a police officer. She smiles at me and tells me again that I'll be okay. I close my eyes and hear her tell someone to tell the ambulance to hurry up. Then [[I fall asleep|Epilogue - Neutral]].
+"It's okay," a voice says. "You're gonna be okay." Everything looks dim, but I think I'm looking at a police officer. She smiles at me and tells me again that I'll be okay. I close my eyes and hear her tell someone to tell the ambulance to hurry up. Then [[I fall asleep|Epilogue - Neutral]].<</if>>
 
 :: grab a knife from the kitchen
 <<for _audio range ["door-knock", "door-knock-2", "door-knock-3"]>><<audio _audio stop>><</for>>\
@@ -239,7 +239,9 @@ Instead, I clap a hand over my mouth and hold it in. He can't hear me. He can't.
 <<linkappend "I keep still.">>\
 <<if $textedLuisa>>\
 <<silently>>
-    <<newText "Luisa" "Hey Will! Yeah, definitely. How about Saturday?" true true true>>
+    <<if previous() isnot "Phone">>
+        <<newText "Luisa" "Hey Will! Yeah, definitely. How about Saturday?" true true true>>
+    <</if>>
 <</silently>>
 
  But my phone vibrates in my hand and makes a too loud notification noise. Luisa texted me back. The boots stop in front of my bed, and I try to cower back farther. If I could, I'd burrow into the wall like a mole. The boots turn into knees on the ground, then I'm looking at something... not a face... a mask. A really scary mask.
