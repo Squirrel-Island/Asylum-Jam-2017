@@ -138,7 +138,7 @@ I run to slam the door to Dad's office. The footsteps outside speed up, and I fu
 
 It hurts. It hurts really really bad. And the person comes in. I can't see his face. He's wearing all black and a scary mask. Is it even a person? I don't know. My head hurts... I think I'm bleeding. Mom? Dad? Where are you? Dad, weren't you supposed to be home? Dad... help me.
 
-The mask-man lifts his foot--he's wearing boots like a cowboy, a dumb thing to notice--and brings his foot down on my head. [[Everything goes black.|Epilogue]]
+The mask-man lifts his foot--he's wearing boots like a cowboy, a dumb thing to notice--and brings his foot down on my head. [[Everything goes black.|Epilogue - Bad]]
 
 :: try to run out the front door
 
@@ -148,7 +148,7 @@ It hurts really really bad. Things are getting darker, like it's nighttime, but 
 
 Mom... Dad... where are you? Dad, weren't you supposed to be home? Dad... help me.
 
-Something comes down on my head again. [[Everything goes black.|Epilogue]]
+Something comes down on my head again. [[Everything goes black.|Epilogue - Bad]]
 
 :: hide under Dad's desk
 
@@ -165,7 +165,7 @@ The person grabs me and yanks me out from under the desk. I hit my head, and it 
 
 Mom? Dad? Where are you? Dad, you were supposed to be home by now, weren't you? Dad... help me.
 
-The mask-man hits me again. [[Everything goes black.|Epilogue]] 
+The mask-man hits me again. [[Everything goes black.|Epilogue - Bad]] 
 <<else>>\
  I even hold my breath. The boots move across the room, then back to the door, then back across the room. They're in front of me, and I really wanna run, but I know he'll catch me. Finally, the boots walk away. I hear them going upstairs.
 
@@ -175,7 +175,7 @@ I think I can [[get out of the house]] now.
 
 :: get out of the house
 
-I run for the door, fumble with the lock for a second, and then sprint out into the front yard. <<if $calledThePolice>><<set $end to 3>>A police officer is pulling up in front of my house with the lights on. I think it's the same guy that waved to me before. He bundles me into the back of his car with his partner, who he tells to watch the front. He goes around the back, but I'm suddenly very sleepy. [[I nod off.|Epilogue]]<<else>><<set $end to 2>>Footsteps run out of the house behind me, and when I look back, the person is wearing a really scary mask. I run harder, but he's catching up. Somewhere nearby, sirens are wailing, but they sound far away still.
+I run for the door, fumble with the lock for a second, and then sprint out into the front yard. <<if $calledThePolice>><<set $end to 3>>A police officer is pulling up in front of my house with the lights on. I think it's the same guy that waved to me before. He bundles me into the back of his car with his partner, who he tells to watch the front. He goes around the back, but I'm suddenly very sleepy. [[I nod off.|Epilogue - Good]]<<else>><<set $end to 2>>Footsteps run out of the house behind me, and when I look back, the person is wearing a really scary mask. I run harder, but he's catching up. Somewhere nearby, sirens are wailing, but they sound far away still.
 
 Something hard hits me in the back of the head, and it really really hurts. It knocks me over, and I skid across the sidewalk. I start crying. There's a lot of blood, and one of my teeth is on the ground in front of me. My mouth feels full of liquid and I spit out more blood.
 
@@ -185,7 +185,7 @@ The mask man stomps on my leg, and my bone snaps. I scream. He grinds his boot i
 
 The sirens are closer now. Someone yells, and the pressure goes away.
 
-"It's okay," a voice says. "You're gonna be okay." Everything looks dim, but I think I'm looking at a police officer. She smiles at me and tells me again that I'll be okay. I close my eyes and hear her tell someone to tell the ambulance to hurry up. Then [[I fall asleep|Epilogue]].
+"It's okay," a voice says. "You're gonna be okay." Everything looks dim, but I think I'm looking at a police officer. She smiles at me and tells me again that I'll be okay. I close my eyes and hear her tell someone to tell the ambulance to hurry up. Then [[I fall asleep|Epilogue - Neutral]].
 
 :: grab a knife from the kitchen
 <<for _audio range ["door-knock", "door-knock-2", "door-knock-3"]>><<audio _audio stop>><</for>>\
@@ -202,7 +202,7 @@ The man is wearing a really scary mask, and he walks towards me. I try to crawl 
 
 He stabs me in the arm. It hurts! It hurts! Mommy, it hurts! Help me. Daddy? Dad, weren't you supposed to be home? Dad... help me..."
 
-Dad doesn't come. The mask-man plays with me until [[everything goes black|Epilogue]].
+Dad doesn't come. The mask-man plays with me until [[everything goes black|Epilogue - Bad]].
 
 :: hide upstairs
 <<for _audio range ["door-knock", "door-knock-2", "door-knock-3"]>><<audio _audio stop>><</for>>\
@@ -229,12 +229,12 @@ The person grabs me and yanks me out from under my bed. I hit my head, and it re
 
 Mom? Dad? Where are you? Dad, you were supposed to be home by now, weren't you? Dad... help me.
 
-The mask-man hits me again. [[Everything goes black.|Epilogue]]
+The mask-man hits me again. [[Everything goes black.|Epilogue - Bad]]
 <<else>>\
  The boots walk across my room, stop in front of my desk, move to my dresser, stop in front of my fish. They move again... and stop in front of my bed. I stop breathing. After what seems like a million years, they step back and leave my room. \
 <<if $calledThePolice>><<set $end to 3>>The person starts tearing through my parents room, but someone bangs on the front door. "Police! Open up!" The footsteps stop. I don't hear them run or anything. They just stop.
 
-It only feels like a second, but the next thing, a police man--the one who waved to me this morning, I think--pulls me out from under the bed and leads me to a police car. As soon as I'm in, I feel super sleepy, and I guess I [[nod off|Epilogue]].
+It only feels like a second, but the next thing, a police man--the one who waved to me this morning, I think--pulls me out from under the bed and leads me to a police car. As soon as I'm in, I feel super sleepy, and I guess I [[nod off|Epilogue - Good]].
 <<else>>The person tears through the rest of the top floor. Shouldn't the police be here by now? The boots come back into my room and stop in front of my bed. Oh God, he knows...
 
 The boots turn into knees on the ground, then I'm looking at something... not a face... a mask. A really scary mask.
@@ -251,7 +251,7 @@ But someone bangs on the front door. "Police! Open up!"
 
 Everything blinks for a second, and I'm not looking at the mask-man anymore. 
 
-"It's okay," a voice says. "You're gonna be okay." Everything looks dim, but I think I'm looking at a police officer. She smiles at me and tells me again that I'll be okay. I close my eyes and hear her tell someone to tell the ambulance to hurry up. Then [[I fall asleep|Epilogue]].
+"It's okay," a voice says. "You're gonna be okay." Everything looks dim, but I think I'm looking at a police officer. She smiles at me and tells me again that I'll be okay. I close my eyes and hear her tell someone to tell the ambulance to hurry up. Then [[I fall asleep|Epilogue - Neutral]].
 <</if>>
 <</if>>
 <</linkappend>>
