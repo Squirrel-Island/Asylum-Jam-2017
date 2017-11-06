@@ -51,6 +51,8 @@
                                    "sfx/phone-notif.ogg">>
 <<cacheaudio "breaking-glass"      "sfx/breaking-glass.m4a"
                                    "sfx/breaking-glass.ogg">>
+<<cacheaudio "rain"                "sfx/rain.m4a"
+                                   "sfx/rain.ogg">>
 
 <<waitforaudio>>
 

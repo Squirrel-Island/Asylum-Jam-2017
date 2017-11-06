@@ -1,14 +1,15 @@
 :: widgets
 
 /*
-newText name (string) content (string) incoming (boolean) notify (boolean)
+newText name (string) content (string) incoming (boolean) notify (boolean) unread (boolean)
 name is the name/company of the person Will is speaking with.
 content is the content of the message.
 incoming is a boolean that represents whether the message is incoming or outgoing message.
 notify is a boolean that represents whether the message will trigger shake and notif tone.
+unread is a boolean that represents whether a message is considered unread when created.
 */
 <<widget "newText">>
-    <<set _message to { 'content': $args[1], 'incoming': $args[2], 'notify': $args[3] }>>
+    <<set _message to { 'content': $args[1], 'incoming': $args[2], 'notify': $args[3], 'unread': $args[4] }>>
 
     <<if $threads.hasOwnProperty($args[0]) == false>>
         <<set $threads[$args[0]] to {}>>
@@ -21,8 +22,12 @@ notify is a boolean that represents whether the message will trigger shake and n
     <</if>>
 
     <<set $threads[$args[0]]['updatedAt'] = new Date()>>
-    <<set $threads[$args[0]]['unread'] = true>>
-    <<set $phoneUnread = true>>
+    <<set $threads[$args[0]]['unread'] = _message['unread']>>
+
+    <<if $phoneUnread == false>>
+        <<set $phoneUnread to _message['unread']>>
+    <</if>>
+
     <<replace "#phone-notif">><<include "Phone Notification">><</replace>>
 
     <<if _message['notify'] == true>>
@@ -42,14 +47,11 @@ notify is a boolean that represents whether the message will trigger shake and n
 
     <<for _i to 0; _i < Object.keys($threads).length; _i++>>
         <<set _key to Object.keys($threads)[_i]>>
-        <<set _thread to $threads[_key]>>
         <<set _unreadsExist to false>>
 
-        <<capture _thread>>
-            <<if _thread['unread'] == true>>
-                <<set _unreadsExist = true>>
-            <</if>>
-        <</capture>>
+        <<if $threads[_key]['unread'] == true>>
+            <<set _unreadsExist to true>>
+        <</if>>
 
         <<set $phoneUnread to _unreadsExist>>
         <<replace "#phone-notif">><<include "Phone Notification">><</replace>>
