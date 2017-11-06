@@ -1,10 +1,2 @@
 :: Start
-<<set $chapter to "Select">>
-[[Chapter One]]
-[[Chapter Two]]
-[[Chapter Three]]
-[[Epilogue]]
-
---
-
-[[Debug]]
+<<goto "Chapter One">>

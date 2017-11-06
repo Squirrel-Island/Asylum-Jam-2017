@@ -1,6 +1,6 @@
 :: Chapter Three
 
-<<set $chapter to 3>>\
+<<set $chapter to 3>><<audio "rain" stop>>\
 It's almost 11:30, and the phone didn't ring at all today. I guess Dad must've called those gardener people and told them not to call the house anymore. Mom woke me up early to take my temperature, but she didn't give me any Tylenol since I was down at 99.2 and felt okay. I think I might be able to go into school tomorrow. Amazingly, I actually //want// to go back to school. It's lonely (and kinda freaky) being here alone, and I miss Joey's jokes about Marvin Connery's B.O. 
 
 I'd also like to see Luisa. I had that dream again last night, the one about dancing with her in the gym. We were about to kiss (again) when Mom woke me up. Ugh. I'm thinking about texting her and asking if she wants to hang out this weekend. Would that make things weird? I hope not. She might think I'm crushing on her, but I guess I am. I wonder if she likes me too... I dunno if I should <<linkreplace "send her a text">>\

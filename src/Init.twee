@@ -30,7 +30,6 @@
 
 /* Initialize audio */
 
-<<cacheaudio "bgm_waltz"           "bgm/end-card-waltz-5-master.ogg">>
 <<cacheaudio "rotary-ring"         "sfx/rotary-ring-1.m4a"
                                    "sfx/rotary-ring-1.ogg">>
 <<cacheaudio "rotary-ring-2"       "sfx/rotary-ring-2.m4a"
